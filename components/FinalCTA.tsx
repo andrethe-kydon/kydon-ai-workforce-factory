@@ -1,0 +1,39 @@
+import HubSpotForm from "./HubSpotForm";
+import styles from "./FinalCTA.module.css";
+
+export default function FinalCTA() {
+  return (
+    <section className={styles.section} id="final-cta">
+      <div className={styles.orb} aria-hidden="true" />
+      <div className={styles.inner}>
+        <h2 className={styles.heading}>
+          Your OPC Starts{" "}
+          <span className="grad-text">Here.</span>
+        </h2>
+        <p className={styles.sub}>
+          Join the waitlist for Cohort 1. We&apos;ll send you the full application,
+          eligibility criteria, and programme timeline — no commitment required.
+        </p>
+
+        {/*
+          ╔══════════════════════════════════════════════════════╗
+          ║  HUBSPOT SETUP — replace these two values:          ║
+          ║  1. portalId  → your HubSpot Portal ID              ║
+          ║     (HubSpot → Settings → Account Setup → Account)  ║
+          ║  2. formId    → your HubSpot Form ID                ║
+          ║     (HubSpot → Marketing → Forms → your form)       ║
+          ╚══════════════════════════════════════════════════════╝
+        */}
+        <HubSpotForm
+          portalId="YOUR_PORTAL_ID"
+          formId="YOUR_FORM_ID"
+          region="na1"
+        />
+
+        <p className={styles.note}>
+          Cohort 1 · Q3 2025 · Singapore · 30 Seats Only
+        </p>
+      </div>
+    </section>
+  );
+}
