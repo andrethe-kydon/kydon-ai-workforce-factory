@@ -130,7 +130,7 @@
 .shiftHeading {
   font-size: 10px;
   font-weight: 600;
-  color: #9CA3AF;
+  color: var(--lmuted);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -515,7 +515,7 @@
 }
 .faqTog {
   font-size: 18px;
-  color: #9CA3AF;
+  color: var(--lmuted);
   flex-shrink: 0;
   transition: transform 0.25s, color 0.2s;
   line-height: 1;
@@ -563,7 +563,7 @@
   padding: 5px 0;
 }
 .faqMetaKey { color: var(--lmuted); }
-.faqMetaVal { font-weight: 500; }
+.faqMetaVal { font-weight: 500; color: var(--ltext); }
 .faqTalk {
   margin-top: 20px;
   padding-top: 20px;
