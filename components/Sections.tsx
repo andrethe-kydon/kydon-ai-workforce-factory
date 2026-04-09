@@ -4,12 +4,10 @@ import styles from "./Sections.module.css";
    TRUST BAR
 ───────────────────────────────────────── */
 const trustNames = [
-  "MINDEF Singapore",
-  "Ministry of Education",
-  "Ministry of Home Affairs",
-  "People's Association",
   "Korn Ferry",
   "ResMed",
+  "Australian Volunteers",
+  "UWC South East Asia",
 ];
 
 export function TrustBar() {

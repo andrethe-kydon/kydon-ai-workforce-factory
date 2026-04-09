@@ -61,7 +61,7 @@ export function FAQ() {
                   ["Cohort Size", "30 Participants"],
                   ["Location", "Singapore"],
                   ["Phase 1 Cost", "~$0 Grant-Funded", true],
-                  ["Next Cohort", "Q3 2025"],
+                  ["Next Cohort", "Q4 2026"],
                 ].map(([k, v, hi]) => (
                   <div key={String(k)} className={styles.faqMetaRow}>
                     <span className={styles.faqMetaKey}>{k}</span>

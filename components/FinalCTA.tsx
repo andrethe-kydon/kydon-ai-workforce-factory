@@ -31,7 +31,7 @@ export default function FinalCTA() {
         />
 
         <p className={styles.note}>
-          Cohort 1 · Q3 2025 · Singapore · 30 Seats Only
+          Cohort 1 · Q4 2026 · Singapore · 30 Seats Only
         </p>
       </div>
     </section>
