@@ -9,6 +9,8 @@ import {
   TrustSection,
   FAQ,
 } from "@/components/Sections";
+import ProgrammeTimeline from "@/components/ProgrammeTimeline";
+import Curriculum from "@/components/Curriculum";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
@@ -21,6 +23,8 @@ export default function Home() {
         <TrustBar />
         <Problem />
         <Solution />
+        <ProgrammeTimeline />
+        <Curriculum />
         <ForIndividuals />
         <ForEnterprises />
         <TrustSection />
