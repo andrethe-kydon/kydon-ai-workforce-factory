@@ -15,20 +15,7 @@ export default function FinalCTA() {
           eligibility criteria, and programme timeline — no commitment required.
         </p>
 
-        {/*
-          ╔══════════════════════════════════════════════════════╗
-          ║  HUBSPOT SETUP — replace these two values:          ║
-          ║  1. portalId  → your HubSpot Portal ID              ║
-          ║     (HubSpot → Settings → Account Setup → Account)  ║
-          ║  2. formId    → your HubSpot Form ID                ║
-          ║     (HubSpot → Marketing → Forms → your form)       ║
-          ╚══════════════════════════════════════════════════════╝
-        */}
-        <HubSpotForm
-          portalId="YOUR_PORTAL_ID"
-          formId="YOUR_FORM_ID"
-          region="na1"
-        />
+        <HubSpotForm />
 
         <p className={styles.note}>
           Cohort 1 · Q4 2026 · Singapore · 30 Seats Only
