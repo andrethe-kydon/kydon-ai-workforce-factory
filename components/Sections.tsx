@@ -88,25 +88,25 @@ const stages = [
     num: "01",
     mono: "Months 1–3 · 12-Week Bootcamp",
     title: "Train",
-    body: "12-week intensive bootcamp. You validate a real micro-niche, build AI workflows, and deliver a market-tested business plan. Every week produces a real business deliverable.",
-    points: ["12 weeks of structured curriculum", "AI skills, niche validation, MVP build", "18+ real business deliverables", "WSG CCP salary support active"],
-    badge: "WSG CCP — Months 1 to 3",
+    body: "12-week intensive AI bootcamp. You validate a real micro-niche, build agentic workflows, and deliver a market-tested business plan. Every week produces a real business deliverable.",
+    points: ["Prompt engineering & agentic AI systems", "Niche validation and market research", "MVP build and unit economics", "Business plan foundation"],
+    badge: null,
   },
   {
     num: "02",
     mono: "Months 4–5 · Pre-Launch Runway",
-    title: "Deploy",
-    body: "Self-directed pre-launch runway with your dedicated Kydon advisor. Finalise your tech stack, build your client pipeline, complete your business plan and prepare your ESG grant application.",
-    points: ["Dedicated Kydon advisor assigned", "Client pipeline — target 1 LOI minimum", "Business plan and pitch deck completed", "ESG grant draft submitted for review"],
-    badge: "Pre-Launch — Months 4 to 5",
+    title: "Build",
+    body: "Self-directed pre-launch runway with your dedicated Kydon advisor. Finalise your tech stack, build your client pipeline, and prepare your business for launch.",
+    points: ["Dedicated Kydon advisor assigned", "Client pipeline — target 1 client minimum", "Business plan and pitch deck completed", "Full tech stack stress-tested and live"],
+    badge: null,
   },
   {
     num: "03",
-    mono: "Month 6 · D-Day Launch",
-    title: "Scale",
-    body: "Register your OPC with ACRA, complete your D-Day simulation before a Kydon advisory panel, submit your ESG grant application, and launch your certified AI-powered business.",
-    points: ["ACRA OPC registration", "D-Day simulation and certification", "ESG Startup SG grant application submitted", "Kydon Marketplace onboarding begins"],
-    badge: "D-Day Certification — Month 6",
+    mono: "Month 6–12 · Launch & Incubation",
+    title: "Launch",
+    body: "Register your OPC, complete your D-Day simulation before a Kydon advisory panel, and enter the Kydon incubation programme — with access to real enterprise clients from day one.",
+    points: ["OPC registered and certified", "D-Day simulation passed", "Kydon Marketplace client matching", "12-month incubation and advisory support"],
+    badge: null,
   },
 ];
 
@@ -120,8 +120,8 @@ export function Solution() {
           <span className="grad-text">Your OPC.</span>
         </h2>
         <p className={styles.lead}>
-          Not a course. A venture-build system — with government-backed salary support,
-          live enterprise clients, and Kydon's AI University Platform as your operating system.
+          Not a course. A venture-build system — with hands-on agentic AI training,
+          real enterprise clients, and Kydon's AI University Platform as your operating system.
         </p>
         <div className={styles.stages}>
           {stages.map((s) => (
@@ -146,16 +146,16 @@ export function Solution() {
    FOR INDIVIDUALS
 ───────────────────────────────────────── */
 const steps = [
-  { num: "01", title: "Apply & Get Selected", body: "We select mid-career professionals with entrepreneurial intent across any domain. Your domain expertise is the asset. We teach the AI layer on top of it.", grant: null },
-  { num: "02", title: "Get Paid to Train (6 Months)", body: "Join Kydon as a salaried AI Operator. Up to 90% of your salary is subsidized by WSG CCP. Train, build, and earn — simultaneously.", grant: "WSG CCP — Up to 90% Salary Support" },
-  { num: "03", title: "Launch Your One Person Company", body: "Register your OPC with Kydon's legal templates. Apply for $50K startup capital through EnterpriseSG — with Kydon's full application support.", grant: "EnterpriseSG — $50,000 Startup Capital" },
-  { num: "04", title: "Scale with Real Clients", body: "Access Kydon's enterprise client network from day one. Our AI Marketplace matches your niche to live SME and corporate demand — no cold-selling from zero.", grant: null },
+  { num: "01", title: "Apply & Get Selected", body: "We select professionals with entrepreneurial intent across any domain. Marketing, finance, HR, operations, healthcare — your domain expertise is the asset. We teach you the agentic AI layer on top of it.", grant: null },
+  { num: "02", title: "Master Agentic AI — 12 Weeks", body: "12 weeks of intensive hands-on training. Build real agentic workflows, a validated niche, a functional MVP, and 18+ business deliverables. No passive learning — every session produces something real.", grant: null },
+  { num: "03", title: "Build Your Pipeline & Launch", body: "Months 4–5 are your pre-launch runway. Finalise your tech stack, secure your first client, complete your business plan, and pass your D-Day simulation before Month 6.", grant: null },
+  { num: "04", title: "Grow with Kydon's Ecosystem", body: "From Month 7 you enter Kydon's incubation programme — with access to our enterprise client marketplace, bi-weekly advisory sprints, and a network of fellow OPC founders.", grant: null },
 ];
 
 const outcomes = [
   { num: "$8K+", body: "Target monthly revenue for a fully operational AI-service OPC within 12 months of launch.", dark: false },
-  { num: "3–5×", body: "Effective income multiplier when AI handles 70%+ of delivery. Charge for outcomes, not hours.", dark: false },
-  { num: "Skill Sovereignty", body: "Your expertise and client base belong to you. No employer can restructure you out of existence.", dark: true },
+  { num: "18+", body: "Real business deliverables built during the programme — from agentic workflows to live client pipelines.", dark: false },
+  { num: "Agentic AI Certified", body: "Graduate with Kydon's D-Day Readiness Certification — subject to final programme confirmation with our programme partners.", dark: true },
 ];
 
 export function ForIndividuals() {
@@ -196,7 +196,7 @@ export function ForIndividuals() {
                 </div>
               ))}
               <a href="#final-cta" className="btn-grad" style={{ textAlign: "center" }}>
-                Apply for Cohort 1 →
+                Join the Waitlist →
               </a>
             </div>
           </div>
@@ -214,7 +214,7 @@ const benefits = [
   { icon: "⚡", title: "Outcome-Based Pricing", body: "You pay for the workflow and the result — not the hours spent building it." },
   { icon: "✅", title: "Kydon D-Day Certified", body: "Every OPC passes Kydon's Checker system and live client simulations before they reach you." },
   { icon: "📈", title: "Scale Instantly", body: "Engage one OPC for a pilot. Scale to ten for a division-wide rollout. No headcount overhead." },
-  { icon: "🏛️", title: "NAS 2.0 & IMDA Aligned", body: "Supports your NAS 2.0 contribution and may qualify for IMDA co-funding under AI Accelerate." },
+  { icon: "🏛️", title: "Singapore AI Ecosystem", body: "Kydon graduates are trained to the standard Singapore enterprises need. Our OPCs are vetted, niche-specialised, and ready to deliver from day one." },
 ];
 
 export function ForEnterprises() {
@@ -260,10 +260,9 @@ export function ForEnterprises() {
 ───────────────────────────────────────── */
 const grantChips = [
   "Kydon Group — Programme Operator",
-  "WSG Career Conversion Programme",
-  "EnterpriseSG — Startup SG Founder",
-  "IMDA Spark Accreditation",
-  "National AI Strategy 2.0",
+  "100K+ Learners on Kydon Platform",
+  "Singapore's #1 AI Job Density Globally",
+  "Agentic AI Skills — Fastest Growing Cluster",
 ];
 
 export function TrustSection() {
@@ -271,11 +270,11 @@ export function TrustSection() {
     <section className={styles.darkSection} id="trust">
       <div className={styles.container} style={{ textAlign: "center" }}>
         <span className="section-tag" style={{ justifyContent: "center" }}>
-          Built on Singapore&apos;s Infrastructure
+          Built for Singapore&apos;s AI Economy
         </span>
         <h2 className={styles.headingDark} style={{ fontSize: "clamp(28px,4vw,48px)" }}>
-          Grants. Regulators.{" "}
-          <span className="grad-text">Real Institutional Partners.</span>
+          Real Training. Real Skills.{" "}
+          <span className="grad-text">Real Outcomes.</span>
         </h2>
         <div className={styles.grantChips}>
           {grantChips.map((c) => (
@@ -284,8 +283,8 @@ export function TrustSection() {
         </div>
         <div className={styles.trustQuote}>
           <blockquote className={styles.quoteText}>
-            &ldquo;Singapore&apos;s AI future won&apos;t be built by big tech alone — it will be
-            built by empowered individuals operating as agile, AI-native micro-enterprises.&rdquo;
+            &ldquo;Singapore leads the world in AI job density. The professionals who can design
+            and deploy agentic systems are the most valuable in the market right now. We train them.&rdquo;
           </blockquote>
           <cite className={styles.quoteCite}>
             Kydon Group · AI Workforce Factory Strategic Vision 2025

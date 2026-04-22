@@ -18,28 +18,27 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://opc.kydongrp.com"),
-  title: "Kydon AI Workforce Factory | Build Your AI Business in 12 Months | Singapore",
+  title: "Kydon AI Workforce Factory | Master Agentic AI. Launch Your Business. Singapore",
   description:
-    "Singapore's first government-backed programme transforming mid-career professionals into independent AI-powered business owners. WSG CCP funded. Up to $50,000 ESG grant. Cohort 1 open now — 30 seats only.",
+    "Singapore's most intensive agentic AI programme. 12 months. Master agentic workflows, build your OPC, and launch an AI-powered business. Cohort 1 open now — 30 seats only.",
   keywords: [
     "AI workforce Singapore",
-    "WSG Career Conversion Programme",
     "One Person Company Singapore",
     "AI training Singapore",
-    "EnterpriseSG startup grant",
     "Kydon AI",
-    "AI upskilling",
     "mid-career transition Singapore",
     "OPC Singapore",
-    "One Person Company Singapore",
     "AI entrepreneur Singapore",
-    "WSG CCP programme",
     "AI bootcamp Singapore",
-    "ESG startup grant Singapore",
     "AI business Singapore",
     "mid-career switch Singapore",
     "AI Workforce Factory",
     "Kydon OPC",
+    "agentic AI Singapore",
+    "AI workflow automation Singapore",
+    "n8n Singapore",
+    "AI agent developer Singapore",
+    "prompt engineering Singapore",
   ],
   authors: [{ name: "Kydon Group", url: "https://www.kydongrp.com" }],
   creator: "Kydon Group",
@@ -54,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Kydon AI Workforce Factory",
     title: "Stop Learning AI. Earn With It. | Kydon AI Workforce Factory",
     description:
-      "Singapore's first structured pathway from AI learner to AI-powered business owner. Government-backed salary support, real enterprise clients, and a 2-year launch system.",
+      "Singapore's most intensive agentic AI programme. 12 months to master agentic workflows and launch your own AI-powered One Person Company. Cohort 1 open — 30 seats only.",
     images: [
       {
         url: "/og-image.png",
@@ -70,7 +69,7 @@ export const metadata: Metadata = {
     creator: "@KydonGroup",
     title: "Stop Learning AI. Earn With It. | Kydon AI Workforce Factory",
     description:
-      "Singapore's first structured pathway from AI learner to AI-powered business owner. Government-backed.",
+      "Singapore's most intensive agentic AI programme. 12 months. Master agentic AI. Launch your OPC. 30 seats only.",
     images: ["/og-image.png"],
   },
   robots: {

@@ -1,10 +1,10 @@
 import styles from "./Hero.module.css";
 
 const stats = [
-  { num: "90%",   label: "Salary covered\nby WSG CCP Grant" },
-  { num: "$50K",  label: "Capital via\nEnterpriseSG Grant" },
-  { num: "6mo",   label: "Paid traineeship\nto OPC launch" },
-  { num: "100K+", label: "Learners on\nKydon's platform" },
+  { num: "12",     label: "Weeks of intensive\nagentic AI training" },
+  { num: "18+",    label: "Real business\ndeliverables you build" },
+  { num: "Month 6", label: "Your OPC\nis live" },
+  { num: "100K+",  label: "Learners on\nKydon's platform" },
 ];
 
 export default function Hero() {
@@ -18,7 +18,7 @@ export default function Hero() {
         {/* Live badge */}
         <div className={styles.pill}>
           <span className={styles.dot} />
-          <span>Cohort 1 Open · Singapore · 30 Seats</span>
+          <span>Market Sensing Phase · Singapore · Cohort 1 · Q4 2026</span>
         </div>
 
         {/* Headline */}
@@ -29,19 +29,18 @@ export default function Hero() {
 
         {/* Subheading */}
         <p className={styles.sub}>
-          The Kydon AI Workforce Factory transforms mid-career professionals into{" "}
-          <strong>independent, revenue-generating AI Operators</strong> — with
-          government salary support, real enterprise clients, and a structured
-          2-year launch system.
+          The Kydon AI Workforce Factory is Singapore&apos;s most intensive agentic AI
+          programme. In 12 months, you master the workflows powering tomorrow&apos;s
+          businesses — and launch your own AI-powered One Person Company.
         </p>
 
         {/* CTAs */}
         <div className={styles.ctas}>
           <a href="#final-cta" className="btn-grad">
-            Apply for Cohort 1 →
+            Join the Waitlist →
           </a>
           <a href="#solution" className={styles.ghost}>
-            How the Factory Works
+            Explore the Programme
           </a>
         </div>
 

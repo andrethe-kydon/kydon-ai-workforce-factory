@@ -22,12 +22,12 @@ const cols = [
     ],
   },
   {
-    heading: "Grants",
+    heading: "Skills",
     links: [
-      { href: "https://www.wsg.gov.sg", label: "WSG CCP" },
-      { href: "https://www.enterprisesg.gov.sg", label: "EnterpriseSG" },
-      { href: "https://www.imda.gov.sg", label: "IMDA Spark" },
-      { href: "https://www.mas.gov.sg", label: "NAS 2.0" },
+      { href: "#solution", label: "Agentic AI" },
+      { href: "#solution", label: "Prompt Engineering" },
+      { href: "#solution", label: "Workflow Design" },
+      { href: "#solution", label: "OPC Operations" },
     ],
   },
 ];

@@ -4,16 +4,42 @@ import { useState } from "react";
 import styles from "./Sections.module.css";
 
 const faqs = [
-  { q: "How much salary support will I actually receive?", a: "Under WSG's Career Conversion Programme (CCP), the standard rate covers up to 70% of your salary, capped at $5,000/month. If you're aged 40 and above or have been unemployed for 6 or more months, the enhanced rate covers up to 90%, capped at $7,500/month. Kydon tops up an additional 10% on top of the WSG subsidy, so you receive a meaningful take-home from day one." },
-  { q: "Am I eligible if I just graduated?", a: "CCP eligibility requires at least 2 years since graduation or since completing National Service (NS). If you graduated or ORD'd less than 2 years ago, you would not yet meet the programme's minimum work experience requirement." },
-  { q: "Who is eligible to apply?", a: "To be eligible, you must be a Singapore Citizen or Permanent Resident, at least 21 years old, and have graduated or completed NS at least 2 years ago. You must also be making a genuine career switch into an AI-related role. Your target salary must not exceed $5,000/month under the standard rate, or $7,500/month under the enhanced rate (for those aged 40+ or unemployed for 6+ months)." },
-  { q: "How much will I earn during the traineeship?", a: "During the 6-month traineeship, you're employed by Kydon as an AI Operator at a market-rate salary. Up to 90% is subsidized by the WSG Career Conversion Programme. You'll know your exact take-home before signing — no hidden conditions." },
-  { q: "Do I need a tech background to apply?", a: "No. The curriculum is built for mid-career professionals, not engineers. Domain expertise in any field — marketing, finance, HR, operations, healthcare — is your foundation. We teach you the AI layer on top of it." },
-  { q: "What exactly is a One Person Company (OPC)?", a: "An OPC is a registered Singapore business entity operated by a single individual, AI-augmented to deliver services that would normally require a team. You own it, run it, and scale it — with Kydon's incubation ecosystem and enterprise client network behind you." },
-  { q: "What's the time commitment?", a: "The 6-month traineeship is full-time — you are employed by Kydon. Year 2 as an OPC is self-directed; most participants target 6–8 focused hours per day, using AI to amplify output. The Factory is built for intensity, not passive learning." },
-  { q: "What if my business idea doesn't work out?", a: "Kydon's 'Business Diary & Checker' surfaces problems early. The AI validation engine catches weak unit economics and poor market fit before you commit to Year 2. Pivots are expected — and the system is designed for them." },
-  { q: "Is the $50,000 EnterpriseSG grant guaranteed?", a: "Kydon prepares every graduating OPC for the full application — business plan, pitch deck, and financials are all built during the traineeship. Approval is subject to Enterprise Singapore's standard eligibility criteria." },
-  { q: "Where do the enterprise clients come from?", a: "Kydon's AI Marketplace matches OPCs with SMEs and enterprises by niche. Kydon's corporate advisory arm also channels live project work into the OPC network — client relationships often begin during the traineeship itself." },
+  {
+    q: "Is this programme confirmed and when does it start?",
+    a: "The Kydon AI Workforce Factory is currently in its market sensing and development phase. Programme details, structure, and timelines are subject to final confirmation with our programme partners. Cohort 1 is targeted for Q4 2026, but this may be revised. Joining the waitlist is an expression of interest only — there is no commitment or financial obligation at this stage. We will notify all waitlist members directly with confirmed details ahead of applications opening.",
+  },
+  {
+    q: "Do I need a coding background to join?",
+    a: "No. The Kydon AI Workforce Factory is built for professionals with domain expertise — not developers. If you understand how a business process works, we teach you how to automate it with agentic AI. Our graduates come from marketing, finance, HR, operations, healthcare, and consulting backgrounds.",
+  },
+  {
+    q: "What exactly is agentic AI and why does it matter?",
+    a: "Agentic AI refers to AI systems that can plan, make decisions, and execute multi-step tasks autonomously — without needing a human to prompt every action. Unlike simple chatbots, AI agents can browse the web, write and run code, send emails, update CRMs, and coordinate with other agents. This is the skill set Singapore enterprises are struggling to hire for — and the foundation of every OPC built in this programme.",
+  },
+  {
+    q: "What tools will I actually learn to build with?",
+    a: "You will build real workflows using Claude API, OpenAI API, n8n, Zapier, Make.com, LangChain, RAG systems, vector databases, and no-code client portals like Notion and Softr. By graduation you will have a fully configured OPC tech stack that runs your business automatically.",
+  },
+  {
+    q: "What is a One Person Company (OPC)?",
+    a: "An OPC is a registered Singapore business entity operated by a single individual, AI-augmented to deliver services that would normally require a team. You own it, run it, and scale it — with Kydon's incubation ecosystem and enterprise client network behind you.",
+  },
+  {
+    q: "How long is the programme and what is the time commitment?",
+    a: "The programme runs for 12 months. Months 1–3 are an intensive 12-week bootcamp — full-time commitment, 5 days a week. Months 4–5 are self-directed pre-launch with your assigned Kydon advisor. Month 6 is your D-Day launch. Months 7–12 are the incubation phase — you are running your OPC with Kydon's support.",
+  },
+  {
+    q: "What happens if my business idea doesn't work out?",
+    a: "The programme is specifically designed to surface problems early. Our AI-powered validation system catches weak unit economics and poor market fit before you commit to launching. Pivots are expected and the system is built for them — many of our best business concepts emerge from a second or third niche iteration.",
+  },
+  {
+    q: "Who are the enterprise clients?",
+    a: "Kydon operates an AI Marketplace that matches OPC graduates with SMEs and enterprises seeking AI implementation support. Client matching is based on your niche and demonstrated capabilities. Many participants secure their first client during the pre-launch runway phase — before they even officially launch.",
+  },
+  {
+    q: "Is this programme only for mid-career professionals?",
+    a: "The programme is designed for professionals with domain expertise — typically 3 or more years of industry experience in any field. If you are a recent graduate with strong entrepreneurial drive and relevant domain knowledge, reach out to us directly and we will discuss whether there is a suitable pathway for you.",
+  },
 ];
 
 export function FAQ() {
@@ -50,20 +76,27 @@ export function FAQ() {
           {/* Right: sticky sidebar */}
           <div>
             <div className={styles.faqSide}>
-              <h3 className={styles.faqSideTitle}>Ready to Apply?</h3>
+              <h3 className={styles.faqSideTitle}>Be First to Know.</h3>
               <p className={styles.faqSideBody}>
-                Cohort 1 is limited to 30 participants, reviewed on a rolling basis.
-                Early applicants get priority access to enterprise client matches.
+                The programme is currently in market sensing phase. Join the waitlist to be among
+                the first notified when Cohort 1 officially opens — and to help shape the programme.
               </p>
               <a href="#final-cta" className="btn-grad" style={{ display: "block", textAlign: "center" }}>
                 Join the Waitlist →
               </a>
+              <ul style={{ listStyle: "none", padding: 0, margin: "16px 0 0", display: "flex", flexDirection: "column", gap: "8px" }}>
+                {["First access to Cohort 1 applications", "Early bird programme details", "Invitation to our pre-launch briefing"].map((item) => (
+                  <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "13px", color: "var(--muted, #888)" }}>
+                    <span style={{ color: "#f97316", flexShrink: 0, marginTop: "2px" }}>●</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
               <div className={styles.faqMeta}>
                 {[
-                  ["Duration", "2 Years"],
+                  ["Duration", "12 Months"],
                   ["Cohort Size", "30 Participants"],
                   ["Location", "Singapore"],
-                  ["Phase 1 Cost", "~$0 Grant-Funded", true],
                   ["Next Cohort", "Q4 2026"],
                 ].map(([k, v, hi]) => (
                   <div key={String(k)} className={styles.faqMetaRow}>
