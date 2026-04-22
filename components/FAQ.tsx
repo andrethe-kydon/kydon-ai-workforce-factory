@@ -9,6 +9,10 @@ const faqs = [
     a: "The Kydon AI Workforce Factory is currently in its market sensing and development phase. Programme details, structure, and timelines are subject to final confirmation with our programme partners. Cohort 1 is targeted for Q4 2026, but this may be revised. Joining the waitlist is an expression of interest only — there is no commitment or financial obligation at this stage. We will notify all waitlist members directly with confirmed details ahead of applications opening.",
   },
   {
+    q: "How much does the programme cost?",
+    a: "Programme fees for Cohort 1 have not been finalised as the programme is currently pending final confirmation with our programme partners. Waitlist members will be the first to receive full programme details including fees, structure, and application criteria when confirmed. Joining the waitlist involves no financial commitment or obligation of any kind.",
+  },
+  {
     q: "Do I need a coding background to join?",
     a: "No. The Kydon AI Workforce Factory is built for professionals with domain expertise — not developers. If you understand how a business process works, we teach you how to automate it with agentic AI. Our graduates come from marketing, finance, HR, operations, healthcare, and consulting backgrounds.",
   },

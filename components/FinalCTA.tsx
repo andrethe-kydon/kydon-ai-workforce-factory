@@ -19,12 +19,13 @@ export default function FinalCTA() {
         <HubSpotForm />
 
         <p className={styles.note}>
-          Cohort 1 · Q4 2026 · Singapore · 30 Seats Only
+          The first cohort is limited to 30 participants and opens in Q4 2026. We&apos;re currently
+          in market sensing phase — join the waitlist now to be among the first notified and to
+          help shape the programme before it launches.
         </p>
         <p className={styles.disclaimer}>
-          Programme details are subject to final confirmation with programme partners. Joining
-          the waitlist is an expression of interest only — no commitment or financial obligation
-          at this stage.
+          Programme fees and final details are subject to confirmation with programme partners.
+          Joining the waitlist involves no financial commitment or obligation of any kind.
         </p>
       </div>
     </section>
