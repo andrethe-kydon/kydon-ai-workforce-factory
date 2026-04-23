@@ -37,27 +37,27 @@ const curriculum: Phase[] = [
         description:
           'How LLMs actually work for operators. The OPC business model: Revenue per Human vs traditional headcount. Personal Unfair Advantage Audit. Responsible AI: data privacy and when NOT to use AI.',
         objectives: [
-          'How LLMs actually work — tokens, context, reasoning explained for operators',
+          'How LLMs actually work: tokens, context, reasoning explained for operators',
           'The OPC business model: Revenue per Human vs traditional headcount growth',
           'Personal Unfair Advantage Audit: map your domain expertise to AI opportunities',
           'Responsible AI: data privacy, confidentiality, and when NOT to use AI',
         ],
-        lab: 'Your industry through the AI lens — type your first strategic prompt and compare outputs.',
+        lab: 'Your industry through the AI lens. Type your first strategic prompt and compare outputs.',
         deliverable: 'Personal AI Readiness Profile + Top 3 AI opportunity areas in your domain.',
         checker: false,
       },
       {
         num: 2,
-        title: 'Prompt Engineering — From Basic to Expert',
+        title: 'Prompt Engineering: From Basic to Expert',
         description:
-          'Anatomy of a high-performance prompt: role, context, constraints, format. Zero-shot, few-shot, chain-of-thought — when to use each. Prompt chaining for complex business tasks. System prompts and persona engineering.',
+          'Anatomy of a high-performance prompt: role, context, constraints, format. Zero-shot, few-shot, chain-of-thought and when to use each. Prompt chaining for complex business tasks. System prompts and persona engineering.',
         objectives: [
           'Anatomy of a high-performance prompt: role, context, constraints, format',
-          'Zero-shot, few-shot, chain-of-thought — when to use each for business tasks',
+          'Zero-shot, few-shot, chain-of-thought: when to use each for business tasks',
           'Prompt chaining: breaking complex tasks into sequential AI-assisted steps',
           'System prompts and persona engineering: build your virtual AI team',
         ],
-        lab: 'Prompt Battle Lab — same task, 3 different prompt styles. Build your first 10 prompts.',
+        lab: 'Prompt Battle Lab: same task, 3 different prompt styles. Build your first 10 prompts.',
         deliverable: 'Personal Prompt Library (first 10 prompts labelled by use case).',
         checker: false,
       },
@@ -70,10 +70,10 @@ const curriculum: Phase[] = [
           'Deep competitive intelligence using AI: map competitor gaps in minutes',
           'Synthetic persona interviews: validate your niche before spending a dollar',
           'Sentiment analysis at scale: mine reviews, forums, social for unmet needs',
-          'Micro-niche validation: TAM to SAM to niche — big enough to sustain, small enough to own',
+          'Micro-niche validation: TAM to SAM to niche, big enough to sustain, small enough to own',
         ],
         lab: 'From blank page to validated niche brief in 90 minutes using Claude and Perplexity.',
-        deliverable: 'Validated Niche Brief — 3 ranked micro-niches with evidence and pain point analysis.',
+        deliverable: 'Validated Niche Brief: 3 ranked micro-niches with evidence and pain point analysis.',
         checker: false,
       },
       {
@@ -82,7 +82,7 @@ const curriculum: Phase[] = [
         description:
           'Jobs-To-Be-Done framework applied through AI. Deconstruction of 10 successful OPCs. Value proposition canvas. Unit economics primer.',
         objectives: [
-          'Jobs-To-Be-Done framework applied through AI — go beyond what people say they want',
+          'Jobs-To-Be-Done framework applied through AI: go beyond what people say they want',
           'Deconstruction lab: reverse-engineer 10 successful OPCs in tech and ops domains',
           'Value proposition canvas: define pain relievers and gain creators your OPC delivers',
           'Unit economics primer: how AI changes the margin profile of a service business',
@@ -105,14 +105,14 @@ const curriculum: Phase[] = [
         num: 5,
         title: 'Introduction to Agentic AI & Automation Architecture',
         description:
-          "What is an AI agent — tools, memory, planning loops explained simply. No-code automation platforms: n8n, Zapier, Make.com. Trigger-action logic. Human-in-the-Loop design.",
+          "What is an AI agent: tools, memory, planning loops explained simply. No-code automation platforms: n8n, Zapier, Make.com. Trigger-action logic. Human-in-the-Loop design.",
         objectives: [
-          'What is an AI agent — tools, memory, planning loops explained without jargon',
-          'No-code automation platforms: n8n, Zapier, Make.com — choosing the right tool',
+          'What is an AI agent: tools, memory, planning loops explained without jargon',
+          'No-code automation platforms: n8n, Zapier, Make.com. Choose the right tool for your workflow',
           'Trigger-action logic: build your first multi-step business automation end to end',
           'Human-in-the-Loop design: where to keep humans for quality and trust',
         ],
-        lab: 'Build a 5-step automation in n8n — trigger to AI processing to formatted output. Works by end of session.',
+        lab: 'Build a 5-step automation in n8n: trigger to AI processing to formatted output. Works by end of session.',
         deliverable: "Automation Architecture Blueprint for your OPC's core business process.",
         checker: false,
       },
@@ -122,13 +122,13 @@ const curriculum: Phase[] = [
         description:
           'APIs for non-developers: REST, webhooks, HTTP nodes. Connect Claude API to n8n workflows. RAG concepts for operators. PDPA basics and data handling.',
         objectives: [
-          'APIs for non-developers: REST, webhooks, HTTP nodes — reading docs without coding',
-          'Connect Claude and OpenAI APIs to n8n workflows — your first AI-powered automation',
+          'APIs for non-developers: REST, webhooks, HTTP nodes. Reading docs without coding',
+          'Connect Claude and OpenAI APIs to n8n workflows for your first AI-powered automation',
           'RAG concepts for operators: give your agent access to your own documents',
           'PDPA basics and data handling: what you can and cannot send to third-party APIs',
         ],
-        lab: 'Connect Claude API to a document retrieval workflow — CRM plus AI tools plus automation layer all live.',
-        deliverable: 'Fully configured OPC tech stack — CRM, AI tools, automation layer integrated.',
+        lab: 'Connect Claude API to a document retrieval workflow. CRM, AI tools, and automation layer all live.',
+        deliverable: 'Fully configured OPC tech stack: CRM, AI tools, and automation layer integrated.',
         checker: false,
       },
       {
@@ -142,7 +142,7 @@ const curriculum: Phase[] = [
           'Agent memory: short-term context, long-term vector database, episodic history',
           'Error handling and reliability: fallback logic so your OPC does not silently fail',
         ],
-        lab: 'Build a research and report-writing agent system — from URL input to formatted deliverable, fully automated.',
+        lab: 'Build a research and report-writing agent system, from URL input to formatted deliverable, fully automated.',
         deliverable: "Working multi-agent workflow for your OPC's primary service delivery.",
         checker: false,
       },
@@ -157,7 +157,7 @@ const curriculum: Phase[] = [
           'Content as lead magnet: thought leadership that generates inbound without paid ads',
           'Proposal automation: intake form to AI draft to client-ready proposal in minutes',
         ],
-        lab: 'Build a personalised outreach sequence live — prospect URL to sent email in one automated workflow.',
+        lab: 'Build a personalised outreach sequence live: prospect URL to sent email in one automated workflow.',
         deliverable: 'Live lead generation workflow plus first 20 qualified leads in your pipeline.',
         checker: false,
       },
@@ -172,8 +172,8 @@ const curriculum: Phase[] = [
           'No-code client portals: intake forms and dashboards using Notion, Tally, and Softr',
           'User testing your MVP: structured pilot with 3 to 5 real users and fast iteration',
         ],
-        lab: 'Build and demo your end-to-end service delivery system — real client intake to final output, live.',
-        deliverable: 'Functional MVP — service delivery system live and testable by real clients.',
+        lab: 'Build and demo your end-to-end service delivery system: real client intake to final output, live.',
+        deliverable: 'Functional MVP: service delivery system live and testable by real clients.',
         checker: true,
         checkerLabel: 'Phase 2 Milestone Checker',
       },
@@ -192,7 +192,7 @@ const curriculum: Phase[] = [
         description:
           'Value-based pricing: price on outcome value, not hours. Pricing model options: retainer, project, outcome-based, productised services. 12-month financial model. Singapore OPC legal setup: ACRA, GST thresholds, contracts, ESG grant prep.',
         objectives: [
-          'Value-based pricing: price on outcome value, not hours — move beyond time-billing',
+          'Value-based pricing: price on outcome value, not hours. Move beyond time-billing',
           'Pricing model options: retainer, project, outcome-based, productised services',
           '12-month financial model: revenue, costs, breakeven, and scenario planning',
           'Singapore OPC legal setup: ACRA, GST thresholds, contracts, ESG grant preparation',
@@ -212,7 +212,7 @@ const curriculum: Phase[] = [
           'Partnership and ecosystem strategy: embed your OPC in existing business networks',
           'Building a data moat: accumulate proprietary insights competitors cannot replicate',
         ],
-        lab: 'Send 10 personalised outreach messages live in session — real prospects, real messages, real time.',
+        lab: 'Send 10 personalised outreach messages live in session: real prospects, real messages, real time.',
         deliverable: 'Full GTM plan plus 90-day client acquisition calendar with named prospects.',
         checker: false,
       },
@@ -227,7 +227,7 @@ const curriculum: Phase[] = [
           'D-Day simulation: first client brief to proposal to delivery to invoice using only your systems',
           'OPC registration, ESG grant application, and Kydon incubation onboarding',
         ],
-        lab: 'Full mock Day 1 of your OPC — client brief received, proposal, delivery, invoice, no manual shortcuts.',
+        lab: 'Full mock Day 1 of your OPC: client brief received, proposal, delivery, invoice, no manual shortcuts.',
         deliverable: 'Complete business plan plus pitch deck plus MVP demo.',
         checker: true,
         checkerLabel: 'D-Day Readiness Certification',
@@ -275,7 +275,7 @@ export default function Curriculum() {
           <span className="grad-text">Week by Week.</span>
         </h2>
         <p className={`${styles.subheading} ${isLight ? styles.subheadingLight : ''}`}>
-          Every week produces a real business deliverable — not a test or assignment. You leave with 18+ assets you actually use.
+          Every week produces a real business deliverable, not a test or assignment. You leave with 18+ assets you actually use.
         </p>
 
         {/* Phase Tab Navigation */}

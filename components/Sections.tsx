@@ -30,9 +30,9 @@ export function TrustBar() {
    PROBLEM
 ───────────────────────────────────────── */
 const shifts = [
-  { icon: "⚡", title: "Compressed Team Economics", body: "AI enables one person to produce what a team of 5 once could — reshaping firm-size economics permanently." },
+  { icon: "⚡", title: "Compressed Team Economics", body: "AI enables one person to produce what a team of 5 once could, reshaping firm-size economics permanently." },
   { icon: "🏗️", title: "The Rise of AI Operators", body: "Competitive SMEs are shifting to agile AI Operators contracted for outcomes, not hours." },
-  { icon: "🇸🇬", title: "Singapore NAS 2.0 Mandate", body: "The National AI Strategy 2.0 calls for 15,000 new AI practitioners — yet no structured income pathway exists." },
+  { icon: "🇸🇬", title: "Singapore NAS 2.0 Mandate", body: "The National AI Strategy 2.0 calls for 15,000 new AI practitioners, yet no structured income pathway exists." },
   { icon: "📈", title: "The OPC as the New Unit", body: "One Person Companies, AI-augmented, are the most resilient economic production unit of our era." },
 ];
 
@@ -56,8 +56,8 @@ export function Problem() {
               <p className={styles.probDesc}>mid-career professionals lack a credible pathway into AI-native, income-generating work.</p>
             </div>
             <p className={styles.probBody}>
-              The old playbook — degree, company, salary, repeat — was built for a world being rapidly rewritten.{" "}
-              <strong>The question is no longer "will AI affect me?" — it's "will I use AI, or be replaced by someone who does?"</strong>
+              The old playbook of degree, company, salary, repeat was built for a world being rapidly rewritten.{" "}
+              <strong>The question is no longer whether AI will affect you. It is whether you will use AI, or be replaced by someone who does.</strong>
             </p>
           </div>
           <div>
@@ -94,18 +94,18 @@ const stages = [
   },
   {
     num: "02",
-    mono: "Months 4–5 · Pre-Launch Runway",
+    mono: "Month 4 · Pre-Launch Runway",
     title: "Build",
     body: "Self-directed pre-launch runway with your dedicated Kydon advisor. Finalise your tech stack, build your client pipeline, and prepare your business for launch.",
-    points: ["Dedicated Kydon advisor assigned", "Client pipeline — target 1 client minimum", "Business plan and pitch deck completed", "Full tech stack stress-tested and live"],
+    points: ["Dedicated Kydon advisor assigned", "Client pipeline targeting at least 1 client", "Business plan and pitch deck completed", "Full tech stack stress-tested and live"],
     badge: null,
   },
   {
     num: "03",
-    mono: "Month 6–12 · Launch & Incubation",
+    mono: "Months 5–9 · Launch & Incubation",
     title: "Launch",
-    body: "Register your OPC, complete your D-Day simulation before a Kydon advisory panel, and enter the Kydon incubation programme — with access to real enterprise clients from day one.",
-    points: ["OPC registered and certified", "D-Day simulation passed", "Kydon Marketplace client matching", "12-month incubation and advisory support"],
+    body: "Register your OPC, complete your D-Day simulation before a Kydon advisory panel, and enter the Kydon incubation programme, with access to real enterprise clients from day one.",
+    points: ["OPC registered and certified", "D-Day simulation passed", "Kydon Marketplace client matching", "Incubation and advisory support"],
     badge: null,
   },
 ];
@@ -120,7 +120,7 @@ export function Solution() {
           <span className="grad-text">Your OPC.</span>
         </h2>
         <p className={styles.lead}>
-          Not a course. A venture-build system — with hands-on agentic AI training,
+          Not a course. A venture-build system with hands-on agentic AI training,
           real enterprise clients, and Kydon's AI University Platform as your operating system.
         </p>
         <div className={styles.stages}>
@@ -146,16 +146,16 @@ export function Solution() {
    FOR INDIVIDUALS
 ───────────────────────────────────────── */
 const steps = [
-  { num: "01", title: "Apply & Get Selected", body: "We select professionals with entrepreneurial intent across any domain. Marketing, finance, HR, operations, healthcare — your domain expertise is the asset. We teach you the agentic AI layer on top of it.", grant: null },
-  { num: "02", title: "Master Agentic AI — 12 Weeks", body: "12 weeks of intensive hands-on training. Build real agentic workflows, a validated niche, a functional MVP, and 18+ business deliverables. No passive learning — every session produces something real.", grant: null },
-  { num: "03", title: "Build Your Pipeline & Launch", body: "Months 4–5 are your pre-launch runway. Finalise your tech stack, secure your first client, complete your business plan, and pass your D-Day simulation before Month 6.", grant: null },
-  { num: "04", title: "Grow with Kydon's Ecosystem", body: "From Month 7 you enter Kydon's incubation programme — with access to our enterprise client marketplace, bi-weekly advisory sprints, and a network of fellow OPC founders.", grant: null },
+  { num: "01", title: "Apply & Get Selected", body: "We select professionals with entrepreneurial intent across any domain. Marketing, finance, HR, operations, healthcare. Your domain expertise is the asset. We teach you the agentic AI layer on top of it.", grant: null },
+  { num: "02", title: "Master Agentic AI: 12 Weeks", body: "12 weeks of intensive hands-on training. Build real agentic workflows, a validated niche, a functional MVP, and 18+ business deliverables. No passive learning. Every session produces something real.", grant: null },
+  { num: "03", title: "Build Your Pipeline & Launch", body: "Month 4 is your pre-launch runway. Finalise your tech stack, secure your first client, complete your business plan, and pass your D-Day simulation before Month 5.", grant: null },
+  { num: "04", title: "Grow with Kydon's Ecosystem", body: "From Month 5 you enter Kydon's incubation programme, with access to our enterprise client marketplace, bi-weekly advisory sprints, and a network of fellow OPC founders.", grant: null },
 ];
 
 const outcomes = [
   { num: "$8K+", body: "Target monthly revenue for a fully operational AI-service OPC within 12 months of launch.", dark: false },
-  { num: "18+", body: "Real business deliverables built during the programme — from agentic workflows to live client pipelines.", dark: false },
-  { num: "Agentic AI Certified", body: "Graduate with Kydon's D-Day Readiness Certification — subject to final programme confirmation with our programme partners.", dark: true },
+  { num: "18+", body: "Real business deliverables built during the programme, from agentic workflows to live client pipelines.", dark: false },
+  { num: "Agentic AI Certified", body: "Graduate with Kydon's D-Day Readiness Certification, subject to final programme confirmation with our programme partners.", dark: true },
 ];
 
 export function ForIndividuals() {
@@ -210,8 +210,8 @@ export function ForIndividuals() {
    FOR ENTERPRISES
 ───────────────────────────────────────── */
 const benefits = [
-  { icon: "🎯", title: "Niche-Matched Operators", body: "Our AI Marketplace matches your use case to OPCs with exact domain expertise — F&B, legal, HR tech, and more." },
-  { icon: "⚡", title: "Outcome-Based Pricing", body: "You pay for the workflow and the result — not the hours spent building it." },
+  { icon: "🎯", title: "Niche-Matched Operators", body: "Our AI Marketplace matches your use case to OPCs with exact domain expertise across F&B, legal, HR tech, and more." },
+  { icon: "⚡", title: "Outcome-Based Pricing", body: "You pay for the workflow and the result, not the hours spent building it." },
   { icon: "✅", title: "Kydon D-Day Certified", body: "Every OPC passes Kydon's Checker system and live client simulations before they reach you." },
   { icon: "📈", title: "Scale Instantly", body: "Engage one OPC for a pilot. Scale to ten for a division-wide rollout. No headcount overhead." },
   { icon: "🏛️", title: "Singapore AI Ecosystem", body: "Kydon graduates are trained to the standard Singapore enterprises need. Our OPCs are vetted, niche-specialised, and ready to deliver from day one." },
@@ -232,7 +232,7 @@ export function ForEnterprises() {
             <p className={styles.entLead}>
               Stop paying consultancy rates for workshops that produce slide decks.{" "}
               <strong>Kydon-certified OPCs are niche-specialized AI operators</strong>{" "}
-              who build real workflows and generate measurable output — at a fraction of the cost.
+              who build real workflows and generate measurable output at a fraction of the cost.
             </p>
             <a href="#final-cta" className="btn-outline-o">
               Partner with the Factory →
@@ -259,10 +259,10 @@ export function ForEnterprises() {
    TRUST SECTION
 ───────────────────────────────────────── */
 const grantChips = [
-  "Kydon Group — Programme Operator",
+  "Kydon Group, Programme Operator",
   "100K+ Learners on Kydon Platform",
   "Singapore's #1 AI Job Density Globally",
-  "Agentic AI Skills — Fastest Growing Cluster",
+  "Agentic AI Skills, Fastest Growing Cluster",
 ];
 
 export function TrustSection() {

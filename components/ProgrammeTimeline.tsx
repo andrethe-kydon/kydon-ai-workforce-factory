@@ -17,9 +17,9 @@ const phases = [
   },
   {
     num: "02",
-    months: "Months 4–5",
+    months: "Month 4",
     title: "Pre-Launch Runway",
-    body: "Self-directed with your dedicated Kydon advisor. Tech finalisation, client pipeline building, business plan completion, pitch deck, ESG grant draft preparation.",
+    body: "Self-directed with your dedicated Kydon advisor. Tech finalisation, client pipeline building, business plan completion, and pitch deck finalisation.",
     points: [
       "Tech finalisation & QA",
       "Client pipeline building",
@@ -31,7 +31,7 @@ const phases = [
   },
   {
     num: "03",
-    months: "Month 6",
+    months: "Month 5",
     title: "D-Day Launch",
     body: "Kydon panel assessment. ACRA registration, D-Day simulation, OPC certified, ESG grant application submitted.",
     points: [
@@ -45,7 +45,7 @@ const phases = [
   },
   {
     num: "04",
-    months: "Months 7–12",
+    months: "Months 6–9",
     title: "OPC Incubation",
     body: "Kydon-backed scale-up. Marketplace client matching, bi-weekly advisory sprints, and dedicated support to grow your OPC revenue.",
     points: [
@@ -63,7 +63,7 @@ const stats = [
   { value: "12 Weeks", label: "Intensive Bootcamp" },
   { value: "1 Advisor", label: "Dedicated to You" },
   { value: "$50K", label: "ESG Capital Available" },
-  { value: "Month 6", label: "OPC Launch Target" },
+  { value: "Month 5", label: "OPC Launch Target" },
 ];
 
 export default function ProgrammeTimeline() {
@@ -71,13 +71,13 @@ export default function ProgrammeTimeline() {
     <section className={styles.section} id="timeline">
       <div className={styles.container}>
         {/* Header */}
-        <span className="section-tag">Year 1 Programme</span>
+        <span className="section-tag">9-Month Programme</span>
         <h2 className={styles.heading}>
           From Day One to Your Own Business.{" "}
-          <span className="grad-text">In 12 Months.</span>
+          <span className="grad-text">In 9 Months.</span>
         </h2>
         <p className={styles.subheading}>
-          Everything happens in Year 1. No waiting. No delay. You leave with a
+          Everything happens in 9 months. No waiting. No delay. You leave with a
           certified, revenue-generating OPC.
         </p>
 

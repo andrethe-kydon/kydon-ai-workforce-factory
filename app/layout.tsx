@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://opc.kydongrp.com"),
   title: "Kydon AI Workforce Factory | Master Agentic AI. Launch Your Business. Singapore",
   description:
-    "Singapore's most intensive agentic AI programme. 12 months. Master agentic workflows, build your OPC, and launch an AI-powered business. Cohort 1 open now — 30 seats only.",
+    "Singapore's most intensive agentic AI programme. 9 months. Master agentic workflows, build your OPC, and launch an AI-powered business. Cohort 1 open now. 30 seats only.",
   keywords: [
     "AI workforce Singapore",
     "One Person Company Singapore",
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
     siteName: "Kydon AI Workforce Factory",
     title: "Stop Learning AI. Earn With It. | Kydon AI Workforce Factory",
     description:
-      "Singapore's most intensive agentic AI programme. 12 months to master agentic workflows and launch your own AI-powered One Person Company. Cohort 1 open — 30 seats only.",
+      "Singapore's most intensive agentic AI programme. 9 months to master agentic workflows and launch your own AI-powered One Person Company. Cohort 1 open. 30 seats only.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Kydon AI Workforce Factory — Singapore",
+        alt: "Kydon AI Workforce Factory, Singapore",
       },
     ],
   },
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     creator: "@KydonGroup",
     title: "Stop Learning AI. Earn With It. | Kydon AI Workforce Factory",
     description:
-      "Singapore's most intensive agentic AI programme. 12 months. Master agentic AI. Launch your OPC. 30 seats only.",
+      "Singapore's most intensive agentic AI programme. 9 months. Master agentic AI. Launch your OPC. 30 seats only.",
     images: ["/og-image.png"],
   },
   robots: {
