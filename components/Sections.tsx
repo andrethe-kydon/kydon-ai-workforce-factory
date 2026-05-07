@@ -8,6 +8,7 @@ const trustNames = [
   "ResMed",
   "Australian Volunteers",
   "UWC South East Asia",
+  "Spaze Ventures — ESG Accredited Mentor Partner",
 ];
 
 export function TrustBar() {
