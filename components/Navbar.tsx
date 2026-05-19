@@ -46,6 +46,17 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          <a
+            href="/Kydon_OPC_Launchpad_Brochure.pdf"
+            download="Kydon_OPC_Launchpad_Brochure.pdf"
+            className="btn-outline-o"
+            style={{ padding: "8px 18px", fontSize: "13px", display: "inline-flex", alignItems: "center", gap: "6px" }}
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ flexShrink: 0 }}>
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+            Brochure
+          </a>
           <a href="#final-cta" className="btn-grad" style={{ padding: "8px 20px", fontSize: "13px" }}>
             Join Waitlist →
           </a>
@@ -76,6 +87,17 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          <a
+            href="/Kydon_OPC_Launchpad_Brochure.pdf"
+            download="Kydon_OPC_Launchpad_Brochure.pdf"
+            className="btn-outline-o"
+            style={{ textAlign: "center", marginTop: "8px", display: "flex", alignItems: "center", justifyContent: "center", gap: "6px" }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ flexShrink: 0 }}>
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+            Download Brochure
+          </a>
           <a
             href="#final-cta"
             className="btn-grad"

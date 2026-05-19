@@ -42,6 +42,18 @@
   line-height: 1.75;
   margin-bottom: 44px;
 }
+.brochure {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.brochureText {
+  font-size: 14px;
+  color: var(--text-m);
+  line-height: 1.5;
+}
 .note {
   margin-top: 20px;
   font-family: var(--mono);
