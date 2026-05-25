@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://opc.kydongrp.com"),
-  title: "Kydon AI Workforce Factory | Master Agentic AI. Launch Your Business. Singapore",
+  title: "Build Agentic AI. Launch Your Business. | Kydon AI Workforce Factory",
   description:
     "Singapore's most intensive agentic AI programme. 9 months. Master agentic workflows, build your OPC, and launch an AI-powered business. Cohort 1 open now. 30 seats only.",
   keywords: [
