@@ -192,6 +192,42 @@
   .modtitle { font-weight: 700; }
   .modsyn { color: var(--muted); font-size: 9px; margin-top: 2px; }
 
+  /* Module block (detailed) */
+  .mod {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    padding: 11px 13px;
+    margin-bottom: 8px;
+  }
+  .mod-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .mod-title { font-size: 12px; font-weight: 800; }
+  .mod-title .modnum { color: var(--orange); }
+  .mod-hours { font-size: 9px; font-weight: 700; color: var(--muted); white-space: nowrap; }
+  .mod-syn { font-size: 9px; color: var(--muted); line-height: 1.5; margin: 3px 0 6px; }
+  .mod-obj { list-style: none; margin: 0 0 8px; }
+  .mod-obj li {
+    position: relative;
+    padding-left: 12px;
+    font-size: 9px;
+    color: var(--ink);
+    line-height: 1.45;
+    margin-bottom: 2px;
+  }
+  .mod-obj li::before { content: '•'; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+  .mod-cert {
+    font-size: 8.5px;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 6px;
+  }
+
   .note {
     font-size: 8.5px;
     color: var(--muted);
@@ -311,56 +347,132 @@
   </div>
 
   <!-- ── Modules ── -->
-  <div class="section">
+  <div class="section page-break">
     <div class="eyebrow">Course Structure</div>
     <h2>8 Modules · 580.5 Hours</h2>
-    <table>
-      <thead>
-        <tr><th>Module</th><th>Hours</th></tr>
-      </thead>
-      <tbody>
-        <tr class="avoid-break">
-          <td><span class="modnum">01</span> <span class="modtitle">Gear Up: Essential Career Skills</span>
-            <div class="modsyn">The foundation of the OPC mindset — identify opportunities, automate repetitive work, and use GenAI for everyday productivity.</div></td>
-          <td class="right">43.5h</td>
-        </tr>
-        <tr class="avoid-break">
-          <td><span class="modnum">02</span> <span class="modtitle">Programming for Data Science</span>
-            <div class="modsyn">Python from the ground up with the core data-science libraries, handling structured and unstructured data.</div></td>
-          <td class="right">64h</td>
-        </tr>
-        <tr class="avoid-break">
-          <td><span class="modnum">03</span> <span class="modtitle">Database Management Systems</span>
-            <div class="modsyn">Relational and non-relational database design, data warehousing fundamentals, and ETL processes.</div></td>
-          <td class="right">72h</td>
-        </tr>
-        <tr class="avoid-break">
-          <td><span class="modnum">04</span> <span class="modtitle">Data Wrangling and Visualisation</span>
-            <div class="modsyn">Turn raw data into clean, analysis-ready datasets and build effective visualisations with Seaborn.</div></td>
-          <td class="right">76h</td>
-        </tr>
-        <tr class="avoid-break">
-          <td><span class="modnum">05</span> <span class="modtitle">Building Business Solutions with Low-Code</span>
-            <div class="modsyn">Build the core tool of your OPC using no-code and AI-assisted development, from setup to deployment.</div></td>
-          <td class="right">76h</td>
-        </tr>
-        <tr class="avoid-break">
-          <td><span class="modnum">06</span> <span class="modtitle">Unlocking AI</span>
-            <div class="modsyn">The LLM engine room — prompt engineering, agent design, and RAG knowledge base construction.</div></td>
-          <td class="right">96h</td>
-        </tr>
-        <tr class="avoid-break">
-          <td><span class="modnum">07</span> <span class="modtitle">Integrating Data and AI with Low-Code</span>
-            <div class="modsyn">Assemble the full integrated AI business engine, culminating in the Without-You Test.</div></td>
-          <td class="right">96h</td>
-        </tr>
-        <tr class="avoid-break">
-          <td><span class="modnum">08</span> <span class="modtitle">Leap Forward: Skills for Growth</span>
-            <div class="modsyn">Launch readiness, brand and go-to-market, AI-assisted decision-making, and the D-Day Showcase.</div></td>
-          <td class="right">57h</td>
-        </tr>
-      </tbody>
-    </table>
+
+    <div class="mod">
+      <div class="mod-head">
+        <span class="mod-title"><span class="modnum">01</span> Gear Up: Essential Career Skills</span>
+        <span class="mod-hours">43.5h</span>
+      </div>
+      <p class="mod-syn">The foundation of the OPC mindset — develop the thinking patterns of an AI-leveraged operator and the on-ramp to everything that follows.</p>
+      <ul class="mod-obj">
+        <li>Adopt the operator mindset and spot high-value opportunities to pursue</li>
+        <li>Identify and automate the repetitive, low-value work in your day</li>
+        <li>Use GenAI tools to boost everyday business productivity</li>
+        <li>Build fluency across the core AI tools used throughout the programme</li>
+      </ul>
+      <div class="mod-cert">🎓 Certificate of Completion in Gear up! Essential Skills for Career Transformation and Professional Growth</div>
+    </div>
+
+    <div class="mod">
+      <div class="mod-head">
+        <span class="mod-title"><span class="modnum">02</span> Programming for Data Science</span>
+        <span class="mod-hours">64h</span>
+      </div>
+      <p class="mod-syn">Python programming from the ground up with a focus on data-science applications and the core professional libraries.</p>
+      <ul class="mod-obj">
+        <li>Write Python from first principles for data-science tasks</li>
+        <li>Manipulate and analyse datasets using NumPy and Pandas</li>
+        <li>Create clear charts and plots with Matplotlib</li>
+        <li>Work confidently with both structured and unstructured data</li>
+      </ul>
+      <div class="mod-cert">🎓 Certificate of Completion in Introduction to Programming for Data Science</div>
+    </div>
+
+    <div class="mod">
+      <div class="mod-head">
+        <span class="mod-title"><span class="modnum">03</span> Database Management Systems</span>
+        <span class="mod-hours">72h</span>
+      </div>
+      <p class="mod-syn">A working understanding of how data is stored, organised, and retrieved at scale.</p>
+      <ul class="mod-obj">
+        <li>Design and query relational and non-relational databases</li>
+        <li>Explain data-warehousing fundamentals and when to apply them</li>
+        <li>Build ETL processes to move and transform data reliably</li>
+        <li>Integrate data from multiple sources into a single store</li>
+      </ul>
+      <div class="mod-cert">🎓 Certificate of Completion in Fundamentals of Database Management Systems</div>
+    </div>
+
+    <div class="mod">
+      <div class="mod-head">
+        <span class="mod-title"><span class="modnum">04</span> Data Wrangling and Visualisation</span>
+        <span class="mod-hours">76h</span>
+      </div>
+      <p class="mod-syn">Take raw, messy data and transform it into clean, analysis-ready datasets and clear visualisations.</p>
+      <ul class="mod-obj">
+        <li>Clean and prepare messy, raw data into analysis-ready datasets with Python</li>
+        <li>Diagnose and resolve common data-quality issues</li>
+        <li>Summarise and interpret data using descriptive statistics</li>
+        <li>Communicate insights through effective visualisations with Seaborn</li>
+      </ul>
+      <div class="mod-cert">🎓 Certificate of Completion in From Chaos to Clarity: Data Wrangling for Analysis and Visualisation</div>
+    </div>
+
+    <div class="mod">
+      <div class="mod-head">
+        <span class="mod-title"><span class="modnum">05</span> Building Business Solutions with Low-Code</span>
+        <span class="mod-hours">76h</span>
+      </div>
+      <p class="mod-syn">Build the core tool of your own OPC using no-code and AI-assisted development, from setup to deployment.</p>
+      <ul class="mod-obj">
+        <li>Build a working business tool using no-code and low-code platforms</li>
+        <li>Assemble both the frontend and backend of your OPC's core tool</li>
+        <li>Accelerate development with AI-assisted building techniques</li>
+        <li>Deploy your solution with scalability and maintainability in mind</li>
+      </ul>
+      <div class="mod-cert">🎓 Certificate of Completion in Building Business Solutions with Low-Code Platforms</div>
+    </div>
+
+    <div class="mod">
+      <div class="mod-head">
+        <span class="mod-title"><span class="modnum">06</span> Unlocking AI</span>
+        <span class="mod-hours">96h</span>
+      </div>
+      <p class="mod-syn">The LLM engine room — reason with data and make decisions by prompting AI, culminating in a working AI brain for your OPC.</p>
+      <ul class="mod-obj">
+        <li>Understand how large language models work under the hood</li>
+        <li>Engineer effective prompts to get reliable, repeatable results</li>
+        <li>Design AI agents that carry out multi-step tasks</li>
+        <li>Build a RAG knowledge base grounded in your own data</li>
+        <li>Apply AI ethically and responsibly in a business context</li>
+      </ul>
+      <div class="mod-cert">🎓 Certificate of Completion in Unlocking AI: From Data to Predictions and Beyond</div>
+    </div>
+
+    <div class="mod">
+      <div class="mod-head">
+        <span class="mod-title"><span class="modnum">07</span> Integrating Data and AI with Low-Code</span>
+        <span class="mod-hours">96h</span>
+      </div>
+      <p class="mod-syn">Assemble the full integrated AI business engine into a single functioning system.</p>
+      <ul class="mod-obj">
+        <li>Automate end-to-end workflows across your business systems</li>
+        <li>Integrate third-party services through their APIs</li>
+        <li>Add a GenAI layer that powers intelligent automation</li>
+        <li>Build an operating dashboard to monitor your OPC</li>
+        <li>Pass the Without-You Test: prove your business runs without you for 48 hours</li>
+      </ul>
+      <div class="mod-cert">🎓 Certificate of Completion in Integrating Data and AI with Low-Code Development Platform</div>
+    </div>
+
+    <div class="mod">
+      <div class="mod-head">
+        <span class="mod-title"><span class="modnum">08</span> Leap Forward: Skills for Growth</span>
+        <span class="mod-hours">57h</span>
+      </div>
+      <p class="mod-syn">Graduate ready to step into your chosen pathway, with the narrative and readiness for the D-Day Showcase.</p>
+      <ul class="mod-obj">
+        <li>Prepare your OPC for launch and sustainable growth</li>
+        <li>Position your brand and craft a go-to-market strategy</li>
+        <li>Make data-driven decisions with AI support</li>
+        <li>Pitch with confidence and present at the D-Day Showcase</li>
+      </ul>
+      <div class="mod-cert">🎓 Certificate of Completion in Leap Forward! Essential Skills for Career Transformation and Professional Growth</div>
+    </div>
+
     <p class="note">Total: 580.5 hours · 8 Certificates of Completion · Full-time over 5 months.</p>
   </div>
 
