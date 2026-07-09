@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://opc.kydongrp.com"),
   title: "Build Agentic AI. Launch Your Business. | Kydon AI Workforce Factory",
   description:
-    "Singapore's most intensive agentic AI programme. 9 months. Master agentic workflows, build your OPC, and launch an AI-powered business. Cohort 1 open now. 30 seats only.",
+    "Singapore's most intensive agentic AI programme. 5 months. Master agentic workflows, build your OPC, and launch an AI-powered business. Cohort 1 open now. 30 seats only.",
   keywords: [
     "AI workforce Singapore",
     "One Person Company Singapore",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Build Agentic AI. Launch Your Business. | Kydon AI Workforce Factory",
     description:
-      "Singapore's most intensive agentic AI programme. 12 months to master agentic workflows and launch your own AI-powered One Person Company. Cohort 1 open — 30 seats only.",
+      "Singapore's most intensive agentic AI programme. 5 months of full-time training with Singapore Polytechnic to master agentic workflows and launch your own AI-powered One Person Company. Cohort 1 open — 30 seats only.",
     url: "https://opc.kydongrp.com",
     siteName: "Kydon AI Workforce Factory",
     images: [
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Build Agentic AI. Launch Your Business. | Kydon AI Workforce Factory",
     description:
-      "Singapore's most intensive agentic AI programme. 12 months. Master agentic AI. Launch your OPC. 30 seats only.",
+      "Singapore's most intensive agentic AI programme. 5 months. Master agentic AI. Launch your OPC. 30 seats only.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -98,7 +98,7 @@ const jsonLd = {
   offers: {
     "@type": "Offer",
     name: "AI Workforce Factory Cohort 1",
-    description: "12-month programme to build an AI-powered One Person Company",
+    description: "5-month programme to build an AI-powered One Person Company",
     price: "0",
     priceCurrency: "SGD",
     availability: "https://schema.org/LimitedAvailability",
