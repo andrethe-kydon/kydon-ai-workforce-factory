@@ -36,7 +36,7 @@ export default function FinalCTA() {
         </div>
 
         <p className={styles.note}>
-          The first cohort is limited to 30 participants and opens in Q4 2026. We&apos;re currently
+          The first cohort is limited to 30 participants and opens in September 2026. We&apos;re currently
           in market sensing phase. Join the waitlist now to be among the first notified and to
           help shape the programme before it launches.
         </p>

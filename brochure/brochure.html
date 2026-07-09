@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Kydon OPC Launchpad — Programme Brochure</title>
+<style>
+  @page { size: A4; margin: 14mm 14mm 16mm; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange: #F15522;
+    --orange2: #F97316;
+    --amber: #FBBF24;
+    --ink: #0A0B14;
+    --muted: #5A5B7A;
+    --line: #E6E7F0;
+    --bg-soft: #F8F8FC;
+  }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    line-height: 1.55;
+    font-size: 10.5px;
+  }
+
+  /* ── Cover header ── */
+  .header {
+    background: linear-gradient(135deg, #0A0B14 0%, #16182E 100%);
+    color: #fff;
+    padding: 26px 28px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .brandRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  .wordmark {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+  .wordmark .k { color: var(--orange); }
+  .brandSep { width: 1px; height: 16px; background: rgba(255,255,255,0.25); }
+  .brandSub {
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--amber);
+    font-weight: 600;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 10px;
+  }
+  .title .grad {
+    background: linear-gradient(135deg, #FF8C42 0%, #FBBF24 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .lede {
+    font-size: 11.5px;
+    color: rgba(255,255,255,0.82);
+    max-width: 92%;
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+  .sctp {
+    display: inline-block;
+    background: rgba(241, 85, 34, 0.16);
+    border: 1px solid rgba(241, 85, 34, 0.5);
+    color: #FFC9A8;
+    border-radius: 100px;
+    padding: 6px 14px;
+    font-size: 8.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  /* ── Section ── */
+  .section { margin-bottom: 18px; }
+  .eyebrow {
+    font-size: 8.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--orange2);
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+  h2 {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+  p.body { color: var(--muted); font-size: 10.5px; margin-bottom: 8px; }
+
+  /* ── Key facts grid ── */
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .fact {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    padding: 12px 12px;
+  }
+  .fact .num {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--orange);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .fact .lbl { font-size: 8.5px; color: var(--muted); letter-spacing: 0.02em; }
+
+  /* ── Two-column pathway cards ── */
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .card.accent { border-left: 3px solid var(--orange); }
+  .card.accent2 { border-left: 3px solid #3B82F6; }
+  .card .tag {
+    font-size: 8px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--orange2);
+    margin-bottom: 4px;
+  }
+  .card.accent2 .tag { color: #2563EB; }
+  .card h3 { font-size: 12.5px; font-weight: 800; margin-bottom: 5px; }
+  .card p { font-size: 9.8px; color: var(--muted); }
+
+  /* ── Tables ── */
+  table { width: 100%; border-collapse: collapse; font-size: 9.8px; }
+  thead th {
+    text-align: left;
+    background: var(--ink);
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 8.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  thead th:last-child { text-align: right; }
+  tbody td {
+    padding: 7px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  tbody td.right { text-align: right; white-space: nowrap; font-weight: 700; }
+  tbody tr:nth-child(even) { background: var(--bg-soft); }
+  tr.best td { background: rgba(241, 85, 34, 0.09); }
+  tr.best .best-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #F15522 0%, #F59E0B 100%);
+    color: #fff;
+    font-size: 6.5px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .modnum {
+    display: inline-block;
+    min-width: 20px;
+    font-weight: 800;
+    color: var(--orange);
+  }
+  .modtitle { font-weight: 700; }
+  .modsyn { color: var(--muted); font-size: 9px; margin-top: 2px; }
+
+  .note {
+    font-size: 8.5px;
+    color: var(--muted);
+    margin-top: 7px;
+    font-style: italic;
+  }
+
+  ul.checks { list-style: none; margin-top: 4px; }
+  ul.checks li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 4px;
+    font-size: 10px;
+    color: var(--muted);
+  }
+  ul.checks li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--orange);
+    font-weight: 800;
+  }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .chip {
+    border: 1px solid var(--line);
+    background: var(--bg-soft);
+    border-radius: 100px;
+    padding: 4px 10px;
+    font-size: 8.5px;
+    color: var(--muted);
+  }
+
+  /* ── Footer / CTA ── */
+  .cta {
+    background: linear-gradient(135deg, #F15522 0%, #F59E0B 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 6px;
+  }
+  .cta h3 { font-size: 15px; font-weight: 800; margin-bottom: 3px; }
+  .cta p { font-size: 9.5px; opacity: 0.92; }
+  .cta .contact { text-align: right; font-size: 9.5px; white-space: nowrap; }
+  .cta .contact strong { font-size: 11px; }
+
+  .disclaimer {
+    font-size: 7.8px;
+    color: var(--muted);
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+
+  .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+  .page-break { break-before: page; page-break-before: always; }
+</style>
+</head>
+<body>
+
+  <!-- ── Cover header ── -->
+  <div class="header avoid-break">
+    <div class="brandRow">
+      <span class="wordmark"><span class="k">KYDON</span></span>
+      <span class="brandSep"></span>
+      <span class="brandSub">AI Workforce Factory</span>
+    </div>
+    <div class="title">OPC Launchpad.<br /><span class="grad">Five Months to Your Own AI Business.</span></div>
+    <p class="lede">
+      A full-time programme that trains you to launch and operate an AI-powered
+      One Person Company. Master agentic AI, low-code build, and data foundations,
+      then step into one of two graduation pathways.
+    </p>
+    <span class="sctp">A SkillsFuture Career Transition Programme (SCTP) · Intelligent Data-Driven Digitalisation</span>
+  </div>
+
+  <!-- ── Key facts ── -->
+  <div class="section avoid-break">
+    <div class="facts">
+      <div class="fact"><div class="num">5</div><div class="lbl">Months full-time training</div></div>
+      <div class="fact"><div class="num">8</div><div class="lbl">Modules · 580.5 hours</div></div>
+      <div class="fact"><div class="num">2</div><div class="lbl">Post-graduation pathways</div></div>
+      <div class="fact"><div class="num">Sep&nbsp;2026</div><div class="lbl">Cohort 1 intake</div></div>
+    </div>
+  </div>
+
+  <!-- ── Programme overview ── -->
+  <div class="section avoid-break">
+    <div class="eyebrow">Programme Overview</div>
+    <h2>Train for Five Months. Then Choose Your Track.</h2>
+    <p class="body">
+      The OPC Launchpad is a single, fully integrated Kydon programme, delivered in
+      collaboration with Singapore Polytechnic. Training runs full-time across 8 modules
+      and 580.5 hours, combining classroom learning with asynchronous e-learning. On
+      graduation, you earn 8 Certificates of Completion and choose the pathway that fits
+      your ambition.
+    </p>
+    <div class="cols">
+      <div class="card accent">
+        <div class="tag">Self-Employed</div>
+        <h3>Entrepreneurship Track</h3>
+        <p>Launch your own AI-powered One Person Company. Self-source and operate your own
+           projects with ongoing Kydon mentorship. Goal: a revenue-generating OPC.</p>
+      </div>
+      <div class="card accent2">
+        <div class="tag">Employed · 6 Months</div>
+        <h3>AI Operator Track</h3>
+        <p>Join Kydon as an employed AI Operator for 6 months, operating self-sourced
+           projects under Kydon's structure with dedicated guidance throughout.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Modules ── -->
+  <div class="section">
+    <div class="eyebrow">Course Structure</div>
+    <h2>8 Modules · 580.5 Hours</h2>
+    <table>
+      <thead>
+        <tr><th>Module</th><th>Hours</th></tr>
+      </thead>
+      <tbody>
+        <tr class="avoid-break">
+          <td><span class="modnum">01</span> <span class="modtitle">Gear Up: Essential Career Skills</span>
+            <div class="modsyn">The foundation of the OPC mindset — identify opportunities, automate repetitive work, and use GenAI for everyday productivity.</div></td>
+          <td class="right">43.5h</td>
+        </tr>
+        <tr class="avoid-break">
+          <td><span class="modnum">02</span> <span class="modtitle">Programming for Data Science</span>
+            <div class="modsyn">Python from the ground up with the core data-science libraries, handling structured and unstructured data.</div></td>
+          <td class="right">64h</td>
+        </tr>
+        <tr class="avoid-break">
+          <td><span class="modnum">03</span> <span class="modtitle">Database Management Systems</span>
+            <div class="modsyn">Relational and non-relational database design, data warehousing fundamentals, and ETL processes.</div></td>
+          <td class="right">72h</td>
+        </tr>
+        <tr class="avoid-break">
+          <td><span class="modnum">04</span> <span class="modtitle">Data Wrangling and Visualisation</span>
+            <div class="modsyn">Turn raw data into clean, analysis-ready datasets and build effective visualisations with Seaborn.</div></td>
+          <td class="right">76h</td>
+        </tr>
+        <tr class="avoid-break">
+          <td><span class="modnum">05</span> <span class="modtitle">Building Business Solutions with Low-Code</span>
+            <div class="modsyn">Build the core tool of your OPC using no-code and AI-assisted development, from setup to deployment.</div></td>
+          <td class="right">76h</td>
+        </tr>
+        <tr class="avoid-break">
+          <td><span class="modnum">06</span> <span class="modtitle">Unlocking AI</span>
+            <div class="modsyn">The LLM engine room — prompt engineering, agent design, and RAG knowledge base construction.</div></td>
+          <td class="right">96h</td>
+        </tr>
+        <tr class="avoid-break">
+          <td><span class="modnum">07</span> <span class="modtitle">Integrating Data and AI with Low-Code</span>
+            <div class="modsyn">Assemble the full integrated AI business engine, culminating in the Without-You Test.</div></td>
+          <td class="right">96h</td>
+        </tr>
+        <tr class="avoid-break">
+          <td><span class="modnum">08</span> <span class="modtitle">Leap Forward: Skills for Growth</span>
+            <div class="modsyn">Launch readiness, brand and go-to-market, AI-assisted decision-making, and the D-Day Showcase.</div></td>
+          <td class="right">57h</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">Total: 580.5 hours · 8 Certificates of Completion · Full-time over 5 months.</p>
+  </div>
+
+  <!-- ── Fees ── -->
+  <div class="section avoid-break page-break">
+    <div class="eyebrow">Course Fees</div>
+    <h2>From S$1,724.80 with Funding Support</h2>
+    <table>
+      <thead>
+        <tr><th>Eligibility</th><th>Total Course Fee</th></tr>
+      </thead>
+      <tbody>
+        <tr class="best"><td>SSG ISCA (Additional Funding Support)<span class="best-badge">Best Value</span></td><td class="right">S$1,724.80</td></tr>
+        <tr><td>Singapore Citizens aged 40 and above</td><td class="right">S$2,844.80</td></tr>
+        <tr><td>Singapore Citizens aged below 40</td><td class="right">S$7,324.80</td></tr>
+        <tr><td>Singapore Permanent Residents</td><td class="right">S$7,324.80</td></tr>
+        <tr><td>LTVP+ Holders</td><td class="right">S$7,324.80</td></tr>
+        <tr><td>Unsubsidised (Full Course Fee)</td><td class="right">S$24,416.00</td></tr>
+      </tbody>
+    </table>
+    <p class="note">All fees are inclusive of 9% GST and exclusive of supplementary fees. Fees are subject to final confirmation with our programme partners.</p>
+    <div class="chips">
+      <span class="chip">SkillsFuture Credits</span>
+      <span class="chip">PSEA</span>
+      <span class="chip">Credit / Debit Card</span>
+      <span class="chip">PayNow</span>
+      <span class="chip">Bank Transfer</span>
+      <span class="chip">Telegraphic Transfer</span>
+    </div>
+  </div>
+
+  <!-- ── Entry requirements + key dates ── -->
+  <div class="section avoid-break">
+    <div class="cols">
+      <div>
+        <div class="eyebrow">Entry Requirements</div>
+        <h2>Who Can Apply</h2>
+        <ul class="checks">
+          <li>Higher Nitec qualification or equivalent</li>
+          <li>Basic English proficiency</li>
+          <li>Foundational numeracy skills</li>
+          <li>Comfortable with digital tools such as Microsoft Excel</li>
+          <li>Prior programming experience advantageous but not required</li>
+        </ul>
+        <p class="note">Applicants who do not meet the minimum qualification may still be considered on a case-by-case basis.</p>
+      </div>
+      <div>
+        <div class="eyebrow">Key Dates</div>
+        <h2>Cohort 1 · 2026</h2>
+        <table>
+          <tbody>
+            <tr><td>Registration Period</td><td class="right">24 May – 16 Aug 2026</td></tr>
+            <tr><td>Course Duration</td><td class="right">6 Sep 2026 – 4 Mar 2027</td></tr>
+            <tr><td>Venue</td><td class="right">Singapore Polytechnic</td></tr>
+            <tr><td>Delivery</td><td class="right">Full-time · Classroom + e-learning</td></tr>
+            <tr><td>Intake Number</td><td class="right">SP-SCTP-IDDD-260004</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CTA ── -->
+  <div class="cta avoid-break">
+    <div>
+      <h3>Ready to Launch?</h3>
+      <p>Join the waitlist to be first in line for Cohort 1 and to receive confirmed programme details.</p>
+    </div>
+    <div class="contact">
+      <strong>sales@kydongrp.com</strong><br />
+      kydongrp.com
+    </div>
+  </div>
+
+  <p class="disclaimer">
+    The Kydon AI Workforce Factory is currently in its market sensing phase. Programme
+    details, fees, and timelines are subject to final confirmation with our programme
+    partners. This brochure is for information only and does not constitute an offer.
+    The OPC Launchpad is offered under the SkillsFuture Career Transition Programme (SCTP),
+    administered by SkillsFuture Singapore, and delivered in collaboration with Singapore Polytechnic.
+  </p>
+
+</body>
+</html>

@@ -1,9 +1,9 @@
 import styles from "./Hero.module.css";
 
 const stats = [
-  { num: "12",     label: "Weeks of intensive\nagentic AI training" },
-  { num: "18+",    label: "Real business\ndeliverables you build" },
-  { num: "Month 5", label: "Your OPC\nis live" },
+  { num: "5",      label: "Months of full-time\nagentic AI training" },
+  { num: "8",      label: "Modules across\n580.5 hours" },
+  { num: "2",      label: "Post-graduation\npathways" },
   { num: "100K+",  label: "Learners on\nKydon's platform" },
 ];
 
@@ -18,7 +18,7 @@ export default function Hero() {
         {/* Live badge */}
         <div className={styles.pill}>
           <span className={styles.dot} />
-          <span>Market Sensing Phase · Singapore · Cohort 1 · Q4 2026</span>
+          <span>Market Sensing Phase · Singapore · Cohort 1 · Sep 2026</span>
         </div>
 
         {/* Headline */}
@@ -30,8 +30,9 @@ export default function Hero() {
         {/* Subheading */}
         <p className={styles.sub}>
           The Kydon AI Workforce Factory is Singapore&apos;s most intensive agentic AI
-          programme. In 9 months, you master the workflows powering tomorrow&apos;s
-          businesses, then launch your own AI-powered One Person Company.
+          programme. In 5 months of full-time training, you master the workflows powering
+          tomorrow&apos;s businesses, then launch your own AI-powered One Person Company
+          or join Kydon as an employed AI Operator.
         </p>
 
         {/* CTAs */}

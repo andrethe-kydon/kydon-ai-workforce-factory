@@ -1,110 +1,123 @@
 import styles from "./ProgrammeTimeline.module.css";
 
-const phases = [
+const trainingStep = {
+  num: "01",
+  months: "Months 1–5",
+  title: "Training Programme",
+  body: "Full-time training across 8 modules and 580.5 hours. Delivered jointly by Kydon and Singapore Polytechnic. Combines classroom learning with asynchronous e-learning.",
+  points: [
+    "8 modules across 580.5 hours",
+    "Kydon-led: Modules 1, 5, 6, 7 and 8",
+    "SP-delivered: Modules 2, 3 and 4",
+    "Full-time classroom and asynchronous e-learning",
+    "Intake: September 2026 · Singapore Polytechnic",
+  ],
+};
+
+const pathways = [
   {
-    num: "01",
-    months: "Months 1–3",
-    title: "12-Week Bootcamp",
-    body: "Kydon-led intensive. AI skills, niche validation, MVP build, prompt library, tech stack setup.",
+    key: "entrepreneurship",
+    icon: "🚀",
+    tag: "Self-Employed",
+    title: "Entrepreneurship Track",
+    body: "Graduate and launch your own AI-powered One Person Company. Self-source and operate your own projects with ongoing Kydon mentorship and guidance.",
     points: [
-      "Prompt engineering & agentic workflows",
-      "Niche validation with AI research tools",
-      "MVP scoping & unit economics",
-      "Tech stack setup & prompt library",
+      "Self-source and operate your own projects",
+      "Kydon mentorship and advisory support",
+      "Access to Kydon's ecosystem and network",
+      "Goal: a revenue-generating OPC",
     ],
-    badge: null,
-    connector: true,
   },
   {
-    num: "02",
-    months: "Month 4",
-    title: "Pre-Launch Runway",
-    body: "Self-directed with your dedicated Kydon advisor. Tech finalisation, client pipeline building, business plan completion, and pitch deck finalisation.",
+    key: "operator",
+    icon: "🏢",
+    tag: "Employed · 6 Months",
+    title: "AI Operator Track",
+    body: "Graduate and join Kydon as an employed AI Operator for 6 months. Operate self-sourced projects under Kydon's structure with dedicated guidance throughout.",
     points: [
-      "Tech finalisation & QA",
-      "Client pipeline building",
-      "Business plan completion",
-      "Pitch deck & business plan finalised",
+      "Employed under Kydon for 6 months",
+      "Self-sourced projects, Kydon-guided delivery",
+      "Structured mentorship and performance support",
+      "Goal: establish yourself as a professional AI Operator",
     ],
-    badge: null,
-    connector: true,
-  },
-  {
-    num: "03",
-    months: "Month 5",
-    title: "D-Day Launch",
-    body: "Kydon panel assessment. ACRA registration, D-Day simulation, OPC certified, ESG grant application submitted.",
-    points: [
-      "ACRA business registration",
-      "D-Day live simulation",
-      "OPC certification awarded",
-      "Kydon incubation onboarding begins",
-    ],
-    badge: null,
-    connector: true,
-  },
-  {
-    num: "04",
-    months: "Months 6–9",
-    title: "OPC Incubation",
-    body: "Kydon-backed scale-up. Marketplace client matching, bi-weekly advisory sprints, and dedicated support to grow your OPC revenue.",
-    points: [
-      "AI Marketplace client matching",
-      "Bi-weekly advisory sprints",
-      "Enterprise client pipeline active",
-      "Revenue growth & scale",
-    ],
-    badge: null,
-    connector: false,
   },
 ];
 
 const stats = [
-  { value: "12 Weeks", label: "Intensive Bootcamp" },
-  { value: "1 Advisor", label: "Dedicated to You" },
-  { value: "$50K", label: "ESG Capital Available" },
-  { value: "Month 5", label: "OPC Launch Target" },
+  { value: "580.5", label: "Total training hours" },
+  { value: "8", label: "Modules across 2 institutions" },
+  { value: "2", label: "Post-graduation pathways" },
+  { value: "Sep 2026", label: "Cohort 1 intake" },
 ];
 
 export default function ProgrammeTimeline() {
   return (
-    <section className={styles.section} id="timeline">
+    <section className={styles.section} id="programme-timeline">
       <div className={styles.container}>
         {/* Header */}
-        <span className="section-tag">9-Month Programme</span>
+        <span className="section-tag">5-Month Programme</span>
         <h2 className={styles.heading}>
-          From Day One to Your Own Business.{" "}
-          <span className="grad-text">In 9 Months.</span>
+          Five Months of Training.{" "}
+          <span className="grad-text">Two Ways Forward.</span>
         </h2>
         <p className={styles.subheading}>
-          Everything happens in 9 months. No waiting. No delay. You leave with a
-          certified, revenue-generating OPC.
+          Train full-time across 8 modules with Kydon and Singapore Polytechnic.
+          On graduation, choose the track that fits your ambition.
         </p>
 
-        {/* Timeline track */}
-        <div className={styles.track}>
-          <div className={styles.trackLine} />
-          {phases.map((phase) => (
-            <div key={phase.num} className={styles.phaseCol}>
-              <div className={styles.nodeWrap}>
-                <div className={styles.nodePulse} />
-                <div className={styles.node}>
-                  <span className={styles.nodeNum}>{phase.num}</span>
-                </div>
+        {/* Phase 1 — full-width training step */}
+        <div className={styles.trainingStep}>
+          <div className={styles.nodeWrap}>
+            <div className={styles.nodePulse} />
+            <div className={styles.node}>
+              <span className={styles.nodeNum}>{trainingStep.num}</span>
+            </div>
+          </div>
+          <div className={styles.trainingCard}>
+            <div className={styles.cardMonths}>{trainingStep.months}</div>
+            <h3 className={styles.trainingTitle}>{trainingStep.title}</h3>
+            <p className={styles.cardBody}>{trainingStep.body}</p>
+            <ul className={styles.trainingPts}>
+              {trainingStep.points.map((pt) => (
+                <li key={pt}>{pt}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Fork divider */}
+        <div className={styles.forkWrap}>
+          <div className={styles.forkLine} />
+          <span className={styles.forkLabel}>
+            Upon Graduation · Choose Your Track
+          </span>
+          <div className={styles.forkLine} />
+        </div>
+
+        {/* Phase 2 — two pathway cards */}
+        <div className={styles.pathways}>
+          {pathways.map((p) => (
+            <div
+              key={p.key}
+              className={`${styles.pathCard} ${
+                p.key === "operator"
+                  ? styles.pathCardBlue
+                  : styles.pathCardOrange
+              }`}
+            >
+              <div className={styles.pathHead}>
+                <span className={styles.pathIcon} aria-hidden="true">
+                  {p.icon}
+                </span>
+                <span className={styles.pathTag}>{p.tag}</span>
               </div>
-              <div className={styles.card}>
-                <div className={styles.cardMonths}>{phase.months}</div>
-                <h3 className={styles.cardTitle}>{phase.title}</h3>
-                <p className={styles.cardBody}>{phase.body}</p>
-                <ul className={styles.cardPts}>
-                  {phase.points.map((pt) => (
-                    <li key={pt}>{pt}</li>
-                  ))}
-                </ul>
-                {phase.badge && (
-                  <div className={styles.badge}>{phase.badge}</div>
-                )}
-              </div>
+              <h3 className={styles.pathTitle}>{p.title}</h3>
+              <p className={styles.cardBody}>{p.body}</p>
+              <ul className={styles.cardPts}>
+                {p.points.map((pt) => (
+                  <li key={pt}>{pt}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -112,7 +125,7 @@ export default function ProgrammeTimeline() {
         {/* Stat cards */}
         <div className={styles.statsRow}>
           {stats.map((s) => (
-            <div key={s.value} className={styles.statCard}>
+            <div key={s.label} className={styles.statCard}>
               <div className={styles.statValue}>{s.value}</div>
               <div className={styles.statLabel}>{s.label}</div>
             </div>

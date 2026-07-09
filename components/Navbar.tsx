@@ -6,20 +6,42 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 
 const links = [
-  { href: "#solution",        label: "The Factory" },
-  { href: "#for-individuals", label: "Individuals" },
-  { href: "#for-enterprises", label: "Enterprises" },
-  { href: "#faq",             label: "FAQ" },
+  { href: "#programme-timeline", label: "Programme" },
+  { href: "#course-structure",   label: "Modules" },
+  { href: "#course-details",     label: "Fees" },
+  { href: "#for-individuals",    label: "Individuals" },
+  { href: "#for-enterprises",    label: "Enterprises" },
+  { href: "#faq",                label: "FAQ" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeId, setActiveId] = useState("");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Scroll-spy: highlight the section currently under the navbar
+  useEffect(() => {
+    const sections = links
+      .map((l) => document.getElementById(l.href.slice(1)))
+      .filter((el): el is HTMLElement => el !== null);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveId(entry.target.id);
+        });
+      },
+      { rootMargin: "-64px 0px -55% 0px", threshold: 0 }
+    );
+
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -42,7 +64,13 @@ export default function Navbar() {
         {/* Desktop links */}
         <div className={styles.links}>
           {links.map((l) => (
-            <a key={l.href} href={l.href} className={styles.link}>
+            <a
+              key={l.href}
+              href={l.href}
+              className={`${styles.link} ${
+                activeId === l.href.slice(1) ? styles.linkActive : ""
+              }`}
+            >
               {l.label}
             </a>
           ))}
@@ -81,7 +109,9 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className={styles.mobileLink}
+              className={`${styles.mobileLink} ${
+                activeId === l.href.slice(1) ? styles.linkActive : ""
+              }`}
               onClick={() => setMenuOpen(false)}
             >
               {l.label}

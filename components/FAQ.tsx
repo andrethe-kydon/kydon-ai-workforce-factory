@@ -6,11 +6,11 @@ import styles from "./Sections.module.css";
 const faqs = [
   {
     q: "Is this programme confirmed and when does it start?",
-    a: "The Kydon AI Workforce Factory is currently in its market sensing and development phase. Programme details, structure, and timelines are subject to final confirmation with our programme partners. Cohort 1 is targeted for Q4 2026, but this may be revised. Joining the waitlist is an expression of interest only. There is no commitment or financial obligation at this stage. We will notify all waitlist members directly with confirmed details ahead of applications opening.",
+    a: "The OPC Launchpad is offered under the SkillsFuture Career Transition Programme (SCTP), delivered by Kydon in collaboration with Singapore Polytechnic. Cohort 1 is targeted to begin on 6 September 2026 and run to 4 March 2027, with registration expected to open from 24 May 2026. We are still in our market sensing phase, so some details remain subject to final confirmation with our programme partners. Joining the waitlist is an expression of interest only, with no commitment or financial obligation. We will notify all waitlist members directly with confirmed details ahead of applications opening.",
   },
   {
     q: "How much does the programme cost?",
-    a: "Programme fees for Cohort 1 have not been finalised as the programme is currently pending final confirmation with our programme partners. Waitlist members will be the first to receive full programme details including fees, structure, and application criteria when confirmed. Joining the waitlist involves no financial commitment or obligation of any kind.",
+    a: "The full course fee is S$24,416.00, inclusive of 9% GST. Because the programme is offered under the SkillsFuture Career Transition Programme (SCTP), most participants pay significantly less after subsidy: from S$1,724.80 with SSG ISCA additional funding support, S$2,844.80 for Singapore Citizens aged 40 and above, and S$7,324.80 for Singapore Citizens below 40, Permanent Residents, and LTVP+ holders. SkillsFuture Credits and PSEA can be applied, and Singaporeans aged 25 and above are eligible to use SkillsFuture Credit. See the Course Fees section for the full breakdown. Fees remain subject to final confirmation with our programme partners, and joining the waitlist involves no financial commitment of any kind.",
   },
   {
     q: "Do I need a coding background to join?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "What tools will I actually learn to build with?",
-    a: "You will build real workflows using Claude API, OpenAI API, n8n, Zapier, Make.com, LangChain, RAG systems, vector databases, and no-code client portals like Notion and Softr. By graduation you will have a fully configured OPC tech stack that runs your business automatically.",
+    a: "You will work across the full modern data-and-AI stack: Python and its core data-science libraries (NumPy, Pandas, Matplotlib, Seaborn), relational and non-relational databases, no-code and low-code build platforms, prompt engineering, AI agents, and RAG knowledge bases. By graduation you will have built the core tool of your own OPC — a fully integrated AI business engine that runs your operation.",
   },
   {
     q: "What is a One Person Company (OPC)?",
@@ -30,19 +30,19 @@ const faqs = [
   },
   {
     q: "How long is the programme and what is the time commitment?",
-    a: "The programme runs for 9 months. Months 1–3 are an intensive 12-week bootcamp, full-time, 5 days a week. Month 4 is self-directed pre-launch with your assigned Kydon advisor. Month 5 is your D-Day launch. Months 6–9 are the incubation phase where you are running your OPC with Kydon's support.",
+    a: "Training runs for 5 months, full-time, across 8 modules and 580.5 hours, delivered by Kydon in collaboration with Singapore Polytechnic and combining classroom learning with asynchronous e-learning. On graduation you choose one of two tracks: the Entrepreneurship Track, where you launch your own OPC with ongoing Kydon mentorship, or the AI Operator Track, where you join Kydon as an employed AI Operator for 6 months operating self-sourced projects under our guidance.",
   },
   {
     q: "What happens if my business idea doesn't work out?",
-    a: "The programme is specifically designed to surface problems early. Our AI-powered validation system catches weak unit economics and poor market fit before you commit to launching. Pivots are expected and the system is built for them. Many of our best business concepts emerge from a second or third niche iteration.",
+    a: "Launching your own OPC is not the only route forward. On graduation you choose between two tracks: the Entrepreneurship Track, where you launch and run your own OPC, or the AI Operator Track, where you join Kydon as an employed AI Operator for six months operating self-sourced projects under our guidance. If your first business concept doesn't gain traction, the AI Operator Track lets you keep building real experience and income while you refine your direction. Either way, Kydon's mentorship continues after graduation.",
   },
   {
     q: "Who are the enterprise clients?",
-    a: "Kydon operates an AI Marketplace that matches OPC graduates with SMEs and enterprises seeking AI implementation support. Client matching is based on your niche and demonstrated capabilities. Many participants secure their first client during the pre-launch runway phase, often before they even officially launch.",
+    a: "Kydon operates an AI Marketplace that matches operators with SMEs and enterprises seeking AI implementation support. Matching is based on your capabilities and the projects you take on. Whether you launch your own OPC or join Kydon as an employed AI Operator, you self-source and deliver real client projects under Kydon's guidance, with our ecosystem and network behind you.",
   },
   {
-    q: "Is this programme only for mid-career professionals?",
-    a: "The programme is designed for professionals with domain expertise, typically 3 or more years of industry experience in any field. If you are a recent graduate with strong entrepreneurial drive and relevant domain knowledge, reach out to us directly and we will discuss whether there is a suitable pathway for you.",
+    q: "Who is eligible to join the programme?",
+    a: "Entry is open to applicants with a Higher Nitec qualification or equivalent, basic English proficiency, and foundational numeracy. You should be comfortable with everyday digital tools such as Microsoft Excel; prior programming or data analysis experience is advantageous but not required. Applicants who do not meet the minimum qualification may still be considered on a case-by-case basis — join the waitlist and our team will be in touch.",
   },
 ];
 
@@ -98,10 +98,10 @@ export function FAQ() {
               </ul>
               <div className={styles.faqMeta}>
                 {[
-                  ["Duration", "9 Months"],
+                  ["Training", "5 Months"],
                   ["Cohort Size", "30 Participants"],
-                  ["Location", "Singapore"],
-                  ["Next Cohort", "Q4 2026"],
+                  ["Location", "Singapore Polytechnic"],
+                  ["Next Cohort", "Sep 2026"],
                 ].map(([k, v, hi]) => (
                   <div key={String(k)} className={styles.faqMetaRow}>
                     <span className={styles.faqMetaKey}>{k}</span>

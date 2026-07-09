@@ -87,26 +87,26 @@ export function Problem() {
 const stages = [
   {
     num: "01",
-    mono: "Months 1–3 · 12-Week Bootcamp",
+    mono: "Months 1–5 · 8 Modules",
     title: "Train",
-    body: "12-week intensive AI bootcamp. You validate a real micro-niche, build agentic workflows, and deliver a market-tested business plan. Every week produces a real business deliverable.",
-    points: ["Prompt engineering & agentic AI systems", "Niche validation and market research", "MVP build and unit economics", "Business plan foundation"],
+    body: "Five months of full-time training across 8 modules and 580.5 hours, delivered by Kydon in collaboration with Singapore Polytechnic. Classroom learning combined with asynchronous e-learning.",
+    points: ["8 modules across 580.5 hours", "Agentic AI, low-code build, and data foundations", "Full-time classroom and asynchronous e-learning", "8 Certificates of Completion on graduation"],
     badge: null,
   },
   {
     num: "02",
-    mono: "Month 4 · Pre-Launch Runway",
-    title: "Build",
-    body: "Self-directed pre-launch runway with your dedicated Kydon advisor. Finalise your tech stack, build your client pipeline, and prepare your business for launch.",
-    points: ["Dedicated Kydon advisor assigned", "Client pipeline targeting at least 1 client", "Business plan and pitch deck completed", "Full tech stack stress-tested and live"],
+    mono: "Upon Graduation · Choose Your Track",
+    title: "Choose",
+    body: "On graduation, choose the path that fits your ambition: launch your own venture, or operate under Kydon's structure. Either way, Kydon's guidance continues.",
+    points: ["Entrepreneurship Track: self-employed", "AI Operator Track: employed for 6 months", "Ongoing Kydon mentorship on both tracks", "Access to Kydon's ecosystem and network"],
     badge: null,
   },
   {
     num: "03",
-    mono: "Months 5–9 · Launch & Incubation",
+    mono: "Post-Graduation · Launch & Operate",
     title: "Launch",
-    body: "Register your OPC, complete your D-Day simulation before a Kydon advisory panel, and enter the Kydon incubation programme, with access to real enterprise clients from day one.",
-    points: ["OPC registered and certified", "D-Day simulation passed", "Kydon Marketplace client matching", "Incubation and advisory support"],
+    body: "Build a revenue-generating One Person Company, or establish yourself as a professional AI Operator delivering self-sourced projects under Kydon's guidance.",
+    points: ["Self-source and operate real projects", "Kydon advisory and performance support", "Goal: a revenue-generating OPC", "Or: a professional AI Operator career"],
     badge: null,
   },
 ];
@@ -117,12 +117,13 @@ export function Solution() {
       <div className={styles.container}>
         <span className="section-tag">The Factory System</span>
         <h2 className={styles.headingDark}>
-          Three Stages. One Outcome:{" "}
-          <span className="grad-text">Your OPC.</span>
+          Three Stages.{" "}
+          <span className="grad-text">Two Ways Forward.</span>
         </h2>
         <p className={styles.lead}>
-          Not a course. A venture-build system with hands-on agentic AI training,
-          real enterprise clients, and Kydon's AI University Platform as your operating system.
+          More than a course. A venture-build system: five months of hands-on
+          training delivered in collaboration with Singapore Polytechnic, then two
+          post-graduation pathways backed by Kydon's mentorship and ecosystem.
         </p>
         <div className={styles.stages}>
           {stages.map((s) => (
@@ -148,15 +149,15 @@ export function Solution() {
 ───────────────────────────────────────── */
 const steps = [
   { num: "01", title: "Apply & Get Selected", body: "We select professionals with entrepreneurial intent across any domain. Marketing, finance, HR, operations, healthcare. Your domain expertise is the asset. We teach you the agentic AI layer on top of it.", grant: null },
-  { num: "02", title: "Master Agentic AI: 12 Weeks", body: "12 weeks of intensive hands-on training. Build real agentic workflows, a validated niche, a functional MVP, and 18+ business deliverables. No passive learning. Every session produces something real.", grant: null },
-  { num: "03", title: "Build Your Pipeline & Launch", body: "Month 4 is your pre-launch runway. Finalise your tech stack, secure your first client, complete your business plan, and pass your D-Day simulation before Month 5.", grant: null },
-  { num: "04", title: "Grow with Kydon's Ecosystem", body: "From Month 5 you enter Kydon's incubation programme, with access to our enterprise client marketplace, bi-weekly advisory sprints, and a network of fellow OPC founders.", grant: null },
+  { num: "02", title: "Train Full-Time: 5 Months", body: "Five months of full-time training across 8 modules and 580.5 hours, delivered in collaboration with Singapore Polytechnic. Build real agentic workflows, low-code solutions, and data foundations. Every module produces something real.", grant: null },
+  { num: "03", title: "Graduate & Choose Your Track", body: "Earn 8 Certificates of Completion, then choose your path: launch your own OPC on the Entrepreneurship Track, or join Kydon as an employed AI Operator for 6 months on the AI Operator Track.", grant: null },
+  { num: "04", title: "Grow with Kydon's Ecosystem", body: "Whichever track you choose, Kydon's mentorship continues, with access to our enterprise client marketplace, advisory support, and a network of fellow AI operators and OPC founders.", grant: null },
 ];
 
 const outcomes = [
   { num: "$8K+", body: "Target monthly revenue for a fully operational AI-service OPC within 12 months of launch.", dark: false },
-  { num: "18+", body: "Real business deliverables built during the programme, from agentic workflows to live client pipelines.", dark: false },
-  { num: "Agentic AI Certified", body: "Graduate with Kydon's D-Day Readiness Certification, subject to final programme confirmation with our programme partners.", dark: true },
+  { num: "8 Modules", body: "580.5 hours of hands-on training, earning 8 Certificates of Completion, one per module.", dark: false },
+  { num: "Agentic AI Certified", body: "Graduate with Kydon's Certificates of Completion, subject to final programme confirmation with our programme partners.", dark: true },
 ];
 
 export function ForIndividuals() {

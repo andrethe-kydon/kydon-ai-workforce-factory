@@ -10,7 +10,8 @@ import {
   FAQ,
 } from "@/components/Sections";
 import ProgrammeTimeline from "@/components/ProgrammeTimeline";
-import Curriculum from "@/components/Curriculum";
+import CourseStructure from "@/components/CourseStructure";
+import CourseDetails from "@/components/CourseDetails";
 import Partners from "@/components/Partners";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -25,11 +26,12 @@ export default function Home() {
         <Problem />
         <Solution />
         <ProgrammeTimeline />
-        <Curriculum />
+        <CourseStructure />
         <ForIndividuals />
         <ForEnterprises />
         <TrustSection />
         <Partners />
+        <CourseDetails />
         <FAQ />
         <FinalCTA />
       </main>

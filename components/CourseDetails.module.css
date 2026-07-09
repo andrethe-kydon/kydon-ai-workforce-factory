@@ -1,0 +1,409 @@
+/* ── Section wrapper ── */
+.section {
+  background: var(--k-bg2);
+  padding: 96px 5vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ── Heading ── */
+.heading {
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+  max-width: 720px;
+}
+
+.subheading {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-s);
+  line-height: 1.75;
+  max-width: 620px;
+  margin-bottom: 40px;
+}
+
+/* ── Tab navigation ── */
+.tabBar {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--k-border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.tabBar::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-s);
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tab:hover {
+  color: var(--text-p);
+}
+
+.tabActive {
+  color: #fff;
+  border-bottom-color: var(--k-orange);
+}
+
+/* ── Panel ── */
+.panel {
+  background: var(--k-bg3);
+  border: 1px solid var(--k-border);
+  border-top: none;
+  border-radius: 0 0 var(--rxl) var(--rxl);
+  padding: 36px;
+}
+
+.tabContent {
+  animation: fadeIn 0.18s ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ── Tab 1: About — info grid ── */
+.infoGrid {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoRow {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--k-border);
+}
+
+.infoRow:first-child {
+  padding-top: 0;
+}
+
+.infoLabel {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--k-orange);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.infoValue {
+  font-size: 14px;
+  color: var(--text-p);
+  line-height: 1.6;
+}
+
+/* Shared note */
+.note {
+  margin-top: 24px;
+  font-size: 12px;
+  color: var(--text-m);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* ── Tab 2: Entry requirements ── */
+.checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-p);
+  line-height: 1.55;
+}
+
+.tick {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--k-orange);
+}
+
+/* Reuse .btn-grad global — give it top spacing when standalone */
+.tabContent > .note + :global(.btn-grad),
+.placeholder :global(.btn-grad) {
+  margin-top: 20px;
+}
+
+/* ── Tab 3: Schedule placeholder ── */
+.placeholder {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.placeholderTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+}
+
+.placeholderBody {
+  font-size: 14px;
+  color: var(--text-s);
+  line-height: 1.75;
+  max-width: 520px;
+  margin: 0 auto 8px;
+}
+
+/* ── Tab 4: Fees ── */
+.feeHero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.feeStat {
+  background: var(--k-bg2);
+  border: 1px solid var(--k-border);
+  border-radius: var(--rl);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feeStatPrimary {
+  border-color: var(--k-border2);
+}
+
+.feeStatValue {
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #fff;
+}
+
+.feeStatLabel {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-s);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Fee table */
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--k-border);
+  border-radius: var(--rl);
+}
+
+.feeTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.feeTable th {
+  text-align: left;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--k-orange);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  background: var(--k-surface);
+  border-bottom: 1px solid var(--k-border);
+}
+
+.feeTable td {
+  padding: 14px 20px;
+  color: var(--text-p);
+  line-height: 1.5;
+}
+
+/* Alternating row backgrounds */
+.feeTable tbody tr:nth-child(odd) {
+  background: var(--k-bg);
+}
+
+.feeTable tbody tr:nth-child(even) {
+  background: var(--k-bg3);
+}
+
+.feeCell {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ISCA highlight row */
+.rowHighlight,
+.feeTable tbody tr.rowHighlight:nth-child(odd),
+.feeTable tbody tr.rowHighlight:nth-child(even) {
+  background: rgba(255, 107, 43, 0.10);
+}
+
+.rowHighlight td {
+  color: #fff;
+}
+
+.bestValue {
+  display: inline-block;
+  margin-left: 10px;
+  background: var(--k-grad-btn);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 3px 7px;
+  vertical-align: middle;
+}
+
+.tableNote {
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--text-m);
+  line-height: 1.7;
+}
+
+/* Shared block label */
+.blockLabel {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--k-orange);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+/* Payment methods */
+.payBlock {
+  margin-top: 32px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  background: var(--k-bg2);
+  border: 1px solid var(--k-border);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: var(--text-s);
+}
+
+/* SkillsFuture Credit callout */
+.creditCallout {
+  margin-top: 28px;
+  background: rgba(255, 107, 43, 0.08);
+  border: 1px solid var(--k-border2);
+  border-left: 2px solid var(--k-orange);
+  border-radius: var(--rl);
+  padding: 18px 22px;
+  font-size: 13px;
+  color: var(--text-p);
+  line-height: 1.65;
+}
+
+/* Refund policy */
+.refundBlock {
+  margin-top: 28px;
+}
+
+.refundList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--k-border);
+  border: 1px solid var(--k-border);
+  border-radius: var(--rl);
+  overflow: hidden;
+}
+
+.refundRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--k-bg3);
+  padding: 14px 20px;
+  font-size: 13px;
+}
+
+.refundWindow {
+  color: var(--text-s);
+  flex: 1;
+}
+
+.refundArrow {
+  color: var(--k-orange);
+  flex-shrink: 0;
+}
+
+.refundOutcome {
+  color: var(--text-p);
+  font-weight: 600;
+  text-align: right;
+  min-width: 100px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 720px) {
+  .panel {
+    padding: 24px 20px;
+  }
+  .infoRow {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .feeHero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 72px 5vw;
+  }
+}

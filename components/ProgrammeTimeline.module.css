@@ -45,38 +45,13 @@
   margin-bottom: 0;
 }
 
-/* ── Timeline track ── */
-.track {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
+/* ── Phase 1: full-width training step ── */
+.trainingStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
   margin-top: 56px;
   position: relative;
-}
-
-/* The continuous horizontal line behind all nodes */
-.trackLine {
-  position: absolute;
-  top: 22px; /* vertically centred on the 44px nodes */
-  left: calc(12.5%); /* starts at centre of col 1 */
-  right: calc(12.5%); /* ends at centre of col 4 */
-  height: 1px;
-  background: linear-gradient(
-    to right,
-    var(--k-orange) 0%,
-    var(--k-amber) 100%
-  );
-  opacity: 0.35;
-  z-index: 0;
-}
-
-/* ── Phase column ── */
-.phaseCol {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  padding: 0 10px;
 }
 
 /* ── Node ── */
@@ -89,7 +64,6 @@
   height: 44px;
   flex-shrink: 0;
   z-index: 1;
-  margin-bottom: 24px;
 }
 
 .nodePulse {
@@ -122,18 +96,17 @@
   letter-spacing: 0.04em;
 }
 
-/* ── Phase card ── */
-.card {
+/* ── Phase 1 training card ── */
+.trainingCard {
   background: var(--k-bg3);
   border: 1px solid var(--k-border);
   border-radius: var(--rxl);
-  padding: 24px 20px;
-  width: 100%;
-  transition: border-color 0.2s, background 0.2s;
+  padding: 28px 28px;
   flex: 1;
+  transition: border-color 0.2s, background 0.2s;
 }
 
-.card:hover {
+.trainingCard:hover {
   border-color: var(--k-border2);
   background: var(--k-surface);
 }
@@ -147,8 +120,9 @@
   margin-bottom: 8px;
 }
 
-.cardTitle {
-  font-size: 17px;
+.trainingTitle,
+.pathTitle {
+  font-size: 19px;
   font-weight: 700;
   color: #fff;
   letter-spacing: -0.01em;
@@ -190,18 +164,146 @@
   margin-top: 4px;
 }
 
-.badge {
+/* Training step bullets — two columns on desktop for the wide card */
+.trainingPts {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 24px;
+  margin-bottom: 0;
+}
+
+.trainingPts li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--text-s);
+  line-height: 1.4;
+}
+
+.trainingPts li::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--k-orange);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* ── Fork divider ── */
+.forkWrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 36px 0 28px;
+}
+
+.forkLine {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--k-border2) 50%,
+    transparent 100%
+  );
+}
+
+.forkLabel {
   display: inline-flex;
-  margin-top: 14px;
+  align-items: center;
+  flex-shrink: 0;
   background: rgba(255, 107, 43, 0.10);
   border: 1px solid rgba(255, 107, 43, 0.24);
-  border-radius: 4px;
-  padding: 4px 10px;
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--k-orange);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── Phase 2: pathway cards ── */
+.pathways {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.pathCard {
+  border-radius: var(--rxl);
+  padding: 28px;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+/* Entrepreneurship — orange gradient treatment */
+.pathCardOrange {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 107, 43, 0.14) 0%,
+    var(--k-bg3) 70%
+  );
+  border: 1px solid var(--k-border2);
+}
+
+.pathCardOrange:hover {
+  border-color: var(--k-orange);
+  transform: translateY(-2px);
+}
+
+/* AI Operator — cooler blue-tinted treatment */
+.pathCardBlue {
+  background: var(--k-bg3);
+  border: 1px solid rgba(96, 165, 250, 0.24);
+}
+
+.pathCardBlue:hover {
+  border-color: rgba(96, 165, 250, 0.45);
+  transform: translateY(-2px);
+}
+
+.pathHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.pathIcon {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.pathTag {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 5px 12px;
   font-family: var(--mono);
   font-size: 9px;
-  color: var(--k-orange);
   letter-spacing: 0.07em;
   text-transform: uppercase;
+}
+
+.pathCardOrange .pathTag {
+  background: rgba(255, 107, 43, 0.12);
+  border: 1px solid rgba(255, 107, 43, 0.28);
+  color: var(--k-orange);
+}
+
+.pathCardBlue .pathTag {
+  background: rgba(96, 165, 250, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.30);
+  color: #93C5FD;
+}
+
+/* Blue-track bullet accent */
+.pathCardBlue .cardPts li::before {
+  background: #60A5FA;
 }
 
 /* ── Stat cards row ── */
@@ -248,12 +350,8 @@
 
 /* ── Responsive ── */
 @media (max-width: 1000px) {
-  .track {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-  .trackLine {
-    display: none;
+  .pathways {
+    grid-template-columns: 1fr;
   }
   .statsRow {
     grid-template-columns: repeat(2, 1fr);
@@ -261,20 +359,24 @@
 }
 
 @media (max-width: 600px) {
-  .track {
+  .trainingStep {
+    gap: 16px;
+  }
+  .trainingCard {
+    padding: 22px 18px;
+  }
+  .trainingPts {
     grid-template-columns: 1fr;
   }
-  .phaseCol {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 18px;
+  .forkWrap {
+    gap: 10px;
   }
-  .nodeWrap {
-    margin-bottom: 0;
-    flex-shrink: 0;
+  .forkLabel {
+    padding: 6px 12px;
+    font-size: 9px;
   }
-  .card {
-    flex: 1;
+  .pathCard {
+    padding: 22px 18px;
   }
   .statsRow {
     grid-template-columns: repeat(2, 1fr);

@@ -49,7 +49,7 @@
 .links {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 .link {
   font-size: 13px;
@@ -57,8 +57,26 @@
   color: var(--text-s);
   text-decoration: none;
   transition: color 0.2s;
+  position: relative;
+  white-space: nowrap;
 }
 .link:hover { color: #fff; }
+
+/* Active (scroll-spy) state */
+.linkActive {
+  color: #fff;
+  font-weight: 500;
+}
+.link.linkActive::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--k-grad-btn);
+}
 
 /* Hamburger */
 .hamburger {
