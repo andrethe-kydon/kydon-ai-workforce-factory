@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Build Agentic AI. Launch Your Business. | Kydon AI Workforce Factory",
     description:
-      "Singapore's most intensive agentic AI programme. 5 months of full-time training with Singapore Polytechnic to master agentic workflows and launch your own AI-powered One Person Company. Cohort 1 open — 30 seats only.",
+      "Singapore's most intensive agentic AI programme. 5 months of full-time training with Singapore Polytechnic to master agentic workflows and launch your own AI-powered One Person Company. Cohort 1 open. 30 seats only.",
     url: "https://opc.kydongrp.com",
     siteName: "Kydon AI Workforce Factory",
     images: [
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Kydon AI Workforce Factory — Singapore",
+        alt: "Kydon AI Workforce Factory, Singapore",
       },
     ],
     locale: "en_SG",

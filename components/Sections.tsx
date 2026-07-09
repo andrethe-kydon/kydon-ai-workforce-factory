@@ -8,7 +8,7 @@ const trustNames = [
   "ResMed",
   "Australian Volunteers",
   "UWC South East Asia",
-  "Spaze Ventures — ESG Accredited Mentor Partner",
+  "Spaze Ventures, ESG Accredited Mentor Partner",
 ];
 
 export function TrustBar() {
@@ -31,7 +31,7 @@ export function TrustBar() {
    PROBLEM
 ───────────────────────────────────────── */
 const shifts = [
-  { icon: "⚡", title: "Compressed Team Economics", body: "Every hour you spend on administrative work is an hour taken from your core expertise. AI handles the forms and the formatting — you focus on the thinking and the relationships." },
+  { icon: "⚡", title: "Compressed Team Economics", body: "Every hour you spend on administrative work is an hour taken from your core expertise. AI handles the forms and the formatting. You focus on the thinking and the relationships." },
   { icon: "🏗️", title: "The Rise of AI Operators", body: "Fluency in AI is the new professional baseline. Those who can synthesize, narrate, and direct AI systems will command the premium that purely technical or purely human roles no longer can." },
   { icon: "🇸🇬", title: "Singapore NAS 2.0 Mandate", body: "The National AI Strategy 2.0 calls for 15,000 new AI practitioners, yet no structured income pathway exists." },
   { icon: "📈", title: "The OPC as the New Unit", body: "One Person Companies, AI-augmented, are the most resilient economic production unit of our era." },
@@ -65,7 +65,7 @@ export function Problem() {
             </div>
             <p className={styles.probBody}>
               AI is not coming for your career. It is coming for the parts of your
-              job that should have been automated years ago — the admin, the
+              job that should have been automated years ago: the admin, the
               reporting, the repetitive. What it cannot replace is your contextual
               judgment, your empathy, and your ability to turn ideas into outcomes.
             </p>
@@ -185,16 +185,16 @@ export function Solution() {
    FOR INDIVIDUALS
 ───────────────────────────────────────── */
 const steps = [
-  { num: "01", title: "Apply & Get Selected", body: "We select professionals from any domain — marketing, finance, HR, operations, healthcare. Your existing expertise is the asset. The programme teaches you to amplify it with agentic AI.", grant: null },
-  { num: "02", title: "Train Full-Time: 5 Months", body: "Five months of full-time training across 8 modules and 580.5 hours, delivered jointly with Singapore Polytechnic. You do not just learn AI — you build with it. Every module produces a real deliverable for your own OPC.", grant: null },
+  { num: "01", title: "Apply & Get Selected", body: "We select professionals from any domain: marketing, finance, HR, operations, healthcare. Your existing expertise is the asset. The programme teaches you to amplify it with agentic AI.", grant: null },
+  { num: "02", title: "Train Full-Time: 5 Months", body: "Five months of full-time training across 8 modules and 580.5 hours, delivered jointly with Singapore Polytechnic. You do not just learn AI. You build with it. Every module produces a real deliverable for your own OPC.", grant: null },
   { num: "03", title: "Graduate & Choose Your Track", body: "Earn 8 Certificates of Completion and step into the future you trained for. Launch your own AI-powered One Person Company on the Entrepreneurship Track, or enter the market as a qualified AI specialist on the AI Operator Track.", grant: null },
-  { num: "04", title: "Grow with Kydon's Ecosystem", body: "Whichever path you take, Kydon's network and mentorship remain available — connecting you to fellow graduates, advisors, and opportunities that keep compounding as your OPC grows.", grant: null },
+  { num: "04", title: "Grow with Kydon's Ecosystem", body: "Whichever path you take, Kydon's network and mentorship remain available, connecting you to fellow graduates, advisors, and opportunities that keep compounding as your OPC grows.", grant: null },
 ];
 
 const outcomes = [
-  { num: "Your Domain + AI", body: "You bring the professional expertise. We teach you to direct AI as your extended brain — so your contextual judgment and human insight do the work that no model can replicate.", dark: true },
+  { num: "Your Domain + AI", body: "You bring the professional expertise. We teach you to direct AI as your extended brain, so your contextual judgment and human insight do the work that no model can replicate.", dark: true },
   { num: "8 Modules", body: "580.5 hours of hands-on training, earning 8 Certificates of Completion, one per module.", dark: false },
-  { num: "Agentic AI Certified", body: "Graduate with 8 Certificates of Completion issued by Singapore Polytechnic — one per module — upon successful completion of the SCTP Intelligent Data-Driven Digitalisation programme. Subject to final programme confirmation.", dark: true },
+  { num: "Agentic AI Certified", body: "Graduate with 8 Certificates of Completion issued by Singapore Polytechnic, one per module, upon successful completion of the SCTP Intelligent Data-Driven Digitalisation programme. Subject to final programme confirmation.", dark: true },
 ];
 
 export function ForIndividuals() {

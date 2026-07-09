@@ -29,7 +29,7 @@ const groups: Group[] = [
         certificate:
           "Gear up! Essential Skills for Career Transformation and Professional Growth",
         synopsis:
-          "The foundation of the OPC mindset. Participants develop the thinking patterns of an AI-leveraged operator — learning to identify opportunities, automate repetitive work, and use GenAI tools for everyday business productivity. This module is the on-ramp to everything that follows.",
+          "The foundation of the OPC mindset. Participants develop the thinking patterns of an AI-leveraged operator, learning to identify opportunities, automate repetitive work, and use GenAI tools for everyday business productivity. This module is the on-ramp to everything that follows.",
         hours: "43.5h",
         lead: "KYDON",
         topics: [
@@ -120,7 +120,7 @@ const groups: Group[] = [
         certificate:
           "Unlocking AI: From Data to Predictions and Beyond",
         synopsis:
-          "The LLM engine room. Participants learn to reason with data and make decisions by prompting AI rather than building classical models. Covers the full arc from statistical thinking through prompt engineering, agent design, and RAG knowledge base construction — culminating in a working AI brain for the participant's own OPC.",
+          "The LLM engine room. Participants learn to reason with data and make decisions by prompting AI rather than building classical models. Covers the full arc from statistical thinking through prompt engineering, agent design, and RAG knowledge base construction, culminating in a working AI brain for the participant's own OPC.",
         hours: "96h",
         lead: "KYDON",
         topics: [
@@ -137,7 +137,7 @@ const groups: Group[] = [
         certificate:
           "Integrating Data and AI with Low-Code Development Platform",
         synopsis:
-          "Participants assemble the full integrated AI business engine — connecting automation flows, API integrations, GenAI layers, and an operating dashboard into a single functioning system. The module culminates in the Without-You Test: can the OPC run without the founder for 48 hours?",
+          "Participants assemble the full integrated AI business engine, connecting automation flows, API integrations, GenAI layers, and an operating dashboard into a single functioning system. The module culminates in the Without-You Test: can the OPC run without the founder for 48 hours?",
         hours: "96h",
         lead: "KYDON",
         topics: [
@@ -214,15 +214,15 @@ export default function CourseStructure() {
               Group and Singapore Polytechnic&apos;s School of Computing.
             </p>
             <p className={styles.ovBody}>
-              Kydon brings the OPC methodology — the business-building framework,
+              Kydon brings the OPC methodology: the business-building framework,
               agentic AI systems, and operator mindset. SP brings the academic
-              rigour — three full modules in programming, databases, and data
+              rigour: three full modules in programming, databases, and data
               science delivered to SP&apos;s own accredited syllabus.
             </p>
             <p className={styles.ovBody}>
               Together, the programme covers 22 approved learning outcomes across
               data engineering, AI development, low-code solutions, and
-              professional skills — preparing graduates for four in-demand roles
+              professional skills, preparing graduates for four in-demand roles
               in Singapore&apos;s AI economy.
             </p>
           </div>

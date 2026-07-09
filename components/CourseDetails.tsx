@@ -19,8 +19,8 @@ const aboutFields: { label: string; value: string }[] = [
   { label: "Intake Number", value: "SP-SCTP-IDDD-260004" },
   { label: "TGS Code", value: "To be confirmed" },
   { label: "Total Training Hours", value: "580.5 hours" },
-  { label: "Course Duration", value: "6 Sep 2026 – 4 Mar 2027" },
-  { label: "Registration Period", value: "24 May 2026 – 16 Aug 2026" },
+  { label: "Course Duration", value: "6 Sep 2026 to 4 Mar 2027" },
+  { label: "Registration Period", value: "24 May 2026 to 16 Aug 2026" },
   { label: "Venue", value: "Singapore Polytechnic" },
   {
     label: "Delivery Mode",

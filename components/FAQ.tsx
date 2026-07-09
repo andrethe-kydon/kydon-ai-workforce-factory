@@ -6,7 +6,7 @@ import styles from "./Sections.module.css";
 const faqs = [
   {
     q: "Is this programme confirmed and when does it start?",
-    a: "The OPC Launchpad is offered under the SkillsFuture Career Transition Programme (SCTP), delivered by Kydon in collaboration with Singapore Polytechnic. Cohort 1 is targeted to begin on 6 September 2026 and run to 4 March 2027. We are finalising the programme with our partners ahead of launch, so some details remain subject to confirmation. Joining the waitlist is an expression of interest only, with no commitment or financial obligation — we will notify all waitlist members directly with confirmed details ahead of applications opening.",
+    a: "The OPC Launchpad is offered under the SkillsFuture Career Transition Programme (SCTP), delivered by Kydon in collaboration with Singapore Polytechnic. Cohort 1 is targeted to begin on 6 September 2026 and run to 4 March 2027. We are finalising the programme with our partners ahead of launch, so some details remain subject to confirmation. Joining the waitlist is an expression of interest only, with no commitment or financial obligation. We will notify all waitlist members directly with confirmed details ahead of applications opening.",
   },
   {
     q: "How much does the programme cost?",
@@ -14,11 +14,11 @@ const faqs = [
   },
   {
     q: "What is the SCTP and why does it matter?",
-    a: "The SkillsFuture Career Transition Programme (SCTP) is a government-backed initiative administered by SkillsFuture Singapore that helps mid-career professionals transition into new and in-demand sectors. Being part of SCTP means this programme meets SSG's accreditation standards, qualifies for significant course fee subsidies, and is recognised across Singapore's hiring ecosystem. For participants, it means the training you receive is not just rigorous — it is officially recognised.",
+    a: "The SkillsFuture Career Transition Programme (SCTP) is a government-backed initiative administered by SkillsFuture Singapore that helps mid-career professionals transition into new and in-demand sectors. Being part of SCTP means this programme meets SSG's accreditation standards, qualifies for significant course fee subsidies, and is recognised across Singapore's hiring ecosystem. For participants, it means the training you receive is not just rigorous. It is officially recognised.",
   },
   {
     q: "What is Singapore Polytechnic's role in this programme?",
-    a: "Singapore Polytechnic's School of Computing delivers three of the eight modules — Programming for Data Science, Database Management Systems, and Data Wrangling and Visualisation — in full to SP's own accredited syllabus. These three modules cover 212 of the programme's 580.5 hours and form the technical data foundation of the programme. The remaining five modules are delivered by Kydon, covering the OPC business framework, agentic AI systems, low-code build, and launch readiness. All eight Certificates of Completion are issued by Singapore Polytechnic.",
+    a: "Singapore Polytechnic's School of Computing delivers three of the eight modules (Programming for Data Science, Database Management Systems, and Data Wrangling and Visualisation) in full to SP's own accredited syllabus. These three modules cover 212 of the programme's 580.5 hours and form the technical data foundation of the programme. The remaining five modules are delivered by Kydon, covering the OPC business framework, agentic AI systems, low-code build, and launch readiness. All eight Certificates of Completion are issued by Singapore Polytechnic.",
   },
   {
     q: "What funding is available and who qualifies?",
@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "What certificates will I receive and who issues them?",
-    a: "You receive 8 Certificates of Completion — one for each module — issued by Singapore Polytechnic upon successful completion of each module. The certificates are awarded under the SCTP Intelligent Data-Driven Digitalisation programme and are recognised across Singapore's workforce ecosystem. The full list of certificates is shown on each module card in the Course Structure section above.",
+    a: "You receive 8 Certificates of Completion, one for each module, issued by Singapore Polytechnic upon successful completion of each module. The certificates are awarded under the SCTP Intelligent Data-Driven Digitalisation programme and are recognised across Singapore's workforce ecosystem. The full list of certificates is shown on each module card in the Course Structure section above.",
   },
   {
     q: "Do I need a coding background to join?",
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "What tools will I actually learn to build with?",
-    a: "You will work across the full modern data-and-AI stack: Python and its core data-science libraries (NumPy, Pandas, Matplotlib, Seaborn), relational and non-relational databases, no-code and low-code build platforms, prompt engineering, AI agents, and RAG knowledge bases. By graduation you will have built the core tool of your own OPC — a fully integrated AI business engine that runs your operation.",
+    a: "You will work across the full modern data-and-AI stack: Python and its core data-science libraries (NumPy, Pandas, Matplotlib, Seaborn), relational and non-relational databases, no-code and low-code build platforms, prompt engineering, AI agents, and RAG knowledge bases. By graduation you will have built the core tool of your own OPC: a fully integrated AI business engine that runs your operation.",
   },
   {
     q: "What is a One Person Company (OPC)?",
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "Who is eligible to join the programme?",
-    a: "Entry is open to applicants with a Higher Nitec qualification or equivalent, basic English proficiency, and foundational numeracy. You should be comfortable with everyday digital tools such as Microsoft Excel; prior programming or data analysis experience is advantageous but not required. Applicants who do not meet the minimum qualification may still be considered on a case-by-case basis — join the waitlist and our team will be in touch.",
+    a: "Entry is open to applicants with a Higher Nitec qualification or equivalent, basic English proficiency, and foundational numeracy. You should be comfortable with everyday digital tools such as Microsoft Excel; prior programming or data analysis experience is advantageous but not required. Applicants who do not meet the minimum qualification may still be considered on a case-by-case basis. Join the waitlist and our team will be in touch.",
   },
 ];
 

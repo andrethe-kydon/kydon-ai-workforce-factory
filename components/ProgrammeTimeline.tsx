@@ -2,7 +2,7 @@ import styles from "./ProgrammeTimeline.module.css";
 
 const trainingStep = {
   num: "01",
-  months: "Months 1–5",
+  months: "Months 1 to 5",
   title: "Training Programme",
   body: "Full-time training across 8 modules and 580.5 hours. Delivered jointly by Kydon and Singapore Polytechnic. Combines classroom learning with asynchronous e-learning.",
   points: [
@@ -20,7 +20,7 @@ const pathways = [
     icon: "🚀",
     tag: "Founder",
     title: "Launch Your Own OPC",
-    body: "Graduates who go the entrepreneurship route build and run their own AI-powered One Person Company — serving real clients, operating lean, and growing on their own terms. Kydon's mentorship and ecosystem remain available to support your journey.",
+    body: "Graduates who go the entrepreneurship route build and run their own AI-powered One Person Company, serving real clients, operating lean, and growing on their own terms. Kydon's mentorship and ecosystem remain available to support your journey.",
     points: [
       "Identify your niche and validate your market",
       "Build and launch a revenue-generating OPC",
@@ -33,7 +33,7 @@ const pathways = [
     icon: "🏢",
     tag: "AI Specialist",
     title: "Become a Professional AI Operator",
-    body: "Graduates who take the AI Operator route step into a fast-growing market as qualified AI specialists — helping businesses build, deploy, and run AI-powered systems. The skills you build in this programme are exactly what organisations are looking for right now.",
+    body: "Graduates who take the AI Operator route step into a fast-growing market as qualified AI specialists, helping businesses build, deploy, and run AI-powered systems. The skills you build in this programme are exactly what organisations are looking for right now.",
     points: [
       "Deploy AI systems and automation for businesses",
       "Operate as a specialist in a high-demand field",

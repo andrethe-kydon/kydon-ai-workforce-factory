@@ -24,14 +24,14 @@ export default function Partners() {
               />
               <div className={styles.cardMeta}>
                 <h3 className={styles.partnerName}>Spaze Ventures</h3>
-                <span className={styles.badge}>Accredited Mentor Partner — Enterprise Singapore</span>
+                <span className={styles.badge}>Accredited Mentor Partner, Enterprise Singapore</span>
               </div>
             </div>
             <p className={styles.description}>
               Spaze Ventures is an Enterprise Singapore-appointed Accredited Mentor Partner (AMP)
               with a track record of incubating and accelerating more than 100 early-stage technology
               startups across Southeast Asia. As Kydon&apos;s grant facilitation partner, Spaze Ventures
-              supports qualifying OPC graduates through the Startup SG Founder grant process —
+              supports qualifying OPC graduates through the Startup SG Founder grant process,
               providing mentorship, application guidance, and incubation support to help you access
               up to $50,000 in startup capital from Enterprise Singapore.
             </p>
