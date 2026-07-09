@@ -10,6 +10,7 @@ interface Module {
   hours: string;
   lead: "KYDON" | "SP";
   topics: string[];
+  certificate: string;
 }
 
 interface Group {
@@ -25,15 +26,17 @@ const groups: Group[] = [
       {
         num: "01",
         title: "Gear Up: Essential Career Skills",
+        certificate:
+          "Gear up! Essential Skills for Career Transformation and Professional Growth",
         synopsis:
           "The foundation of the OPC mindset. Participants develop the thinking patterns of an AI-leveraged operator — learning to identify opportunities, automate repetitive work, and use GenAI tools for everyday business productivity. This module is the on-ramp to everything that follows.",
         hours: "43.5h",
         lead: "KYDON",
         topics: [
-          "Operator mindset",
-          "Automation foundations",
-          "GenAI for business productivity",
-          "AI tool fluency",
+          "Adopt the operator mindset and spot high-value opportunities to pursue",
+          "Identify and automate the repetitive, low-value work in your day",
+          "Use GenAI tools to boost everyday business productivity",
+          "Build fluency across the core AI tools used throughout the programme",
         ],
       },
     ],
@@ -45,44 +48,49 @@ const groups: Group[] = [
       {
         num: "02",
         title: "Programming for Data Science",
+        certificate:
+          "Introduction to Programming for Data Science",
         synopsis:
           "Participants learn Python programming from the ground up with a focus on data science applications. Covers the core libraries used in professional data workflows and introduces techniques for handling both structured and unstructured data.",
         hours: "64h",
         lead: "SP",
         topics: [
-          "Python basics",
-          "NumPy",
-          "Matplotlib",
-          "Pandas",
-          "Structured and unstructured data",
+          "Write Python from first principles for data-science tasks",
+          "Manipulate and analyse datasets using NumPy and Pandas",
+          "Create clear charts and plots with Matplotlib",
+          "Work confidently with both structured and unstructured data",
         ],
       },
       {
         num: "03",
         title: "Database Management Systems",
+        certificate:
+          "Fundamentals of Database Management Systems",
         synopsis:
           "Participants develop a working understanding of how data is stored, organised, and retrieved at scale. Covers relational and non-relational database design, data warehousing fundamentals, and the ETL processes that underpin modern data infrastructure.",
         hours: "72h",
         lead: "SP",
         topics: [
-          "Relational and non-relational databases",
-          "Data warehousing",
-          "ETL process",
-          "Data integration",
+          "Design and query relational and non-relational databases",
+          "Explain data-warehousing fundamentals and when to apply them",
+          "Build ETL processes to move and transform data reliably",
+          "Integrate data from multiple sources into a single store",
         ],
       },
       {
         num: "04",
         title: "Data Wrangling and Visualisation",
+        certificate:
+          "From Chaos to Clarity: Data Wrangling for Analysis and Visualisation",
         synopsis:
           "Participants learn to take raw, messy data and transform it into clean, analysis-ready datasets. Covers Python-based cleaning techniques, handling data quality issues, and building effective visualisations using Seaborn.",
         hours: "76h",
         lead: "SP",
         topics: [
-          "Data cleaning with Python",
-          "Handling data quality issues",
-          "Descriptive statistics",
-          "Visualisation with Seaborn",
+          "Clean and prepare messy, raw data into analysis-ready datasets with Python",
+          "Diagnose and resolve common data-quality issues",
+          "Summarise and interpret data using descriptive statistics",
+          "Communicate insights through effective visualisations with Seaborn",
         ],
       },
     ],
@@ -93,45 +101,51 @@ const groups: Group[] = [
       {
         num: "05",
         title: "Building Business Solutions with Low-Code",
+        certificate:
+          "Building Business Solutions with Low-Code Platforms",
         synopsis:
           "Participants build the core tool of their own OPC using no-code and AI-assisted development. Covers the full build cycle from environment setup through to deployment, with a focus on scalability and maintainability for a one-person operator.",
         hours: "76h",
         lead: "KYDON",
         topics: [
-          "No-code and low-code build",
-          "OPC tool frontend and backend",
-          "AI-assisted build",
-          "Deployment",
+          "Build a working business tool using no-code and low-code platforms",
+          "Assemble both the frontend and backend of your OPC's core tool",
+          "Accelerate development with AI-assisted building techniques",
+          "Deploy your solution with scalability and maintainability in mind",
         ],
       },
       {
         num: "06",
         title: "Unlocking AI",
+        certificate:
+          "Unlocking AI: From Data to Predictions and Beyond",
         synopsis:
           "The LLM engine room. Participants learn to reason with data and make decisions by prompting AI rather than building classical models. Covers the full arc from statistical thinking through prompt engineering, agent design, and RAG knowledge base construction — culminating in a working AI brain for the participant's own OPC.",
         hours: "96h",
         lead: "KYDON",
         topics: [
-          "LLM engine room",
-          "Prompt engineering",
-          "AI agents",
-          "RAG knowledge base",
-          "Ethical AI",
+          "Understand how large language models work under the hood",
+          "Engineer effective prompts to get reliable, repeatable results",
+          "Design AI agents that carry out multi-step tasks",
+          "Build a RAG knowledge base grounded in your own data",
+          "Apply AI ethically and responsibly in a business context",
         ],
       },
       {
         num: "07",
         title: "Integrating Data and AI with Low-Code",
+        certificate:
+          "Integrating Data and AI with Low-Code Development Platform",
         synopsis:
           "Participants assemble the full integrated AI business engine — connecting automation flows, API integrations, GenAI layers, and an operating dashboard into a single functioning system. The module culminates in the Without-You Test: can the OPC run without the founder for 48 hours?",
         hours: "96h",
         lead: "KYDON",
         topics: [
-          "Workflow automation",
-          "Third-party API integration",
-          "GenAI layer",
-          "Operating dashboard",
-          "Without-You Test",
+          "Automate end-to-end workflows across your business systems",
+          "Integrate third-party services through their APIs",
+          "Add a GenAI layer that powers intelligent automation",
+          "Build an operating dashboard to monitor your OPC",
+          "Pass the Without-You Test: prove your business runs without you for 48 hours",
         ],
       },
     ],
@@ -142,15 +156,17 @@ const groups: Group[] = [
       {
         num: "08",
         title: "Leap Forward: Skills for Growth",
+        certificate:
+          "Leap Forward! Essential Skills for Career Transformation and Professional Growth",
         synopsis:
           "The final arc prepares participants to graduate and step into their chosen pathway. Covers OPC launch readiness, brand positioning, go-to-market strategy, AI-assisted decision-making from live business data, and the persuasive narrative needed for the D-Day Showcase.",
         hours: "57h",
         lead: "KYDON",
         topics: [
-          "OPC launch readiness",
-          "Brand and GTM",
-          "AI-assisted decision-making",
-          "Pitch and D-Day showcase",
+          "Prepare your OPC for launch and sustainable growth",
+          "Position your brand and craft a go-to-market strategy",
+          "Make data-driven decisions with AI support",
+          "Pitch with confidence and present at the D-Day Showcase",
         ],
       },
     ],
@@ -239,7 +255,9 @@ export default function CourseStructure() {
 
                     {isOpen && (
                       <div className={styles.itemBody}>
-                        <span className={styles.topicsLabel}>Key Topics</span>
+                        <span className={styles.topicsLabel}>
+                          Learning Objectives
+                        </span>
                         <ul className={styles.topics}>
                           {m.topics.map((t) => (
                             <li key={t}>{t}</li>
@@ -247,6 +265,13 @@ export default function CourseStructure() {
                         </ul>
                       </div>
                     )}
+
+                    <div className={styles.certRow}>
+                      <span className={styles.certIcon} aria-hidden="true">
+                        🎓
+                      </span>
+                      <span>Certificate of Completion in {m.certificate}</span>
+                    </div>
                   </div>
                 );
               })}

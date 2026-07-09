@@ -206,8 +206,8 @@
 .topics {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px 20px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .topics li {
@@ -227,6 +227,25 @@
   background: var(--k-orange);
   flex-shrink: 0;
   margin-top: 5px;
+}
+
+/* ── Certificate awarded (always visible) ── */
+.certRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 24px;
+  padding: 14px 0 16px;
+  border-top: 1px solid var(--k-border);
+  font-size: 11px;
+  color: var(--text-s);
+  line-height: 1.4;
+}
+
+.certIcon {
+  flex-shrink: 0;
+  font-size: 13px;
+  line-height: 1;
 }
 
 /* ── Total summary bar ── */
@@ -342,6 +361,9 @@
   }
   .itemBody {
     padding: 0 16px 18px;
+  }
+  .certRow {
+    margin: 0 16px;
   }
   .postGrad {
     padding: 24px 20px;
