@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./Navbar.module.css";
 
 const links = [
@@ -47,8 +46,13 @@ export default function Navbar() {
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.inner}>
-        {/* Brand */}
-        <Link href="/" className={styles.brand}>
+        {/* Brand — links to the main Kydon site */}
+        <a
+          href="https://www.kydongrp.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.brand}
+        >
           <Image
             src="https://www.kydongrp.com/kydon-logo.png"
             alt="Kydon"
@@ -59,7 +63,7 @@ export default function Navbar() {
           />
           <span className={styles.sep} />
           <span className={styles.label}>AI Workforce Factory</span>
-        </Link>
+        </a>
 
         {/* Desktop links */}
         <div className={styles.links}>
@@ -86,7 +90,7 @@ export default function Navbar() {
             Brochure
           </a>
           <a href="#final-cta" className="btn-grad" style={{ padding: "8px 20px", fontSize: "13px" }}>
-            Join Waitlist →
+            Apply Now →
           </a>
         </div>
 
@@ -134,7 +138,7 @@ export default function Navbar() {
             style={{ textAlign: "center", marginTop: "8px" }}
             onClick={() => setMenuOpen(false)}
           >
-            Join Waitlist →
+            Apply Now →
           </a>
         </div>
       )}

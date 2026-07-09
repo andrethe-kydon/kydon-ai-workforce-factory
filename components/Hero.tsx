@@ -18,7 +18,7 @@ export default function Hero() {
         {/* Live badge */}
         <div className={styles.pill}>
           <span className={styles.dot} />
-          <span>Market Sensing Phase · Singapore · Cohort 1 · Sep 2026</span>
+          <span>Now Enrolling · Singapore · Cohort 1 · Sep 2026</span>
         </div>
 
         {/* Headline */}
@@ -32,13 +32,13 @@ export default function Hero() {
           The Kydon AI Workforce Factory is Singapore&apos;s most intensive agentic AI
           programme. In 5 months of full-time training, you master the workflows powering
           tomorrow&apos;s businesses, then launch your own AI-powered One Person Company
-          or join Kydon as an employed AI Operator.
+          or work as a professional AI Operator.
         </p>
 
         {/* CTAs */}
         <div className={styles.ctas}>
           <a href="#final-cta" className="btn-grad">
-            Join the Waitlist →
+            Apply Now →
           </a>
           <a href="#solution" className={styles.ghost}>
             Explore the Programme

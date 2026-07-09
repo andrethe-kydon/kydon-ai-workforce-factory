@@ -288,8 +288,8 @@ export default function CourseStructure() {
             <div className={styles.postGradCol}>
               <span className={styles.postGradLabel}>AI Operator Track</span>
               <p className={styles.postGradText}>
-                Join Kydon as an employed AI Operator for 6 months, operating
-                self-sourced projects under Kydon&apos;s guidance.
+                Enter the market as a qualified AI specialist, helping businesses
+                build, deploy, and run AI-powered systems.
               </p>
               <a className={styles.postGradLink} href="#programme-timeline">
                 See full pathway →

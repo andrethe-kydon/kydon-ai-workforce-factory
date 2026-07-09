@@ -269,30 +269,31 @@
   white-space: nowrap;
 }
 
-/* ISCA highlight row */
-.rowHighlight,
-.feeTable tbody tr.rowHighlight:nth-child(odd),
-.feeTable tbody tr.rowHighlight:nth-child(even) {
-  background: rgba(255, 107, 43, 0.10);
+/* Interactive fee rows */
+.feeRow {
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
 }
 
-.rowHighlight td {
+.feeRow:hover td {
   color: #fff;
 }
 
-.bestValue {
-  display: inline-block;
-  margin-left: 10px;
-  background: var(--k-grad-btn);
+.feeRow:focus-visible {
+  outline: 2px solid var(--k-orange);
+  outline-offset: -2px;
+}
+
+/* Selected row — overrides the odd/even striping */
+.rowSelected,
+.feeTable tbody tr.rowSelected:nth-child(odd),
+.feeTable tbody tr.rowSelected:nth-child(even) {
+  background: rgba(255, 107, 43, 0.14);
+  box-shadow: inset 3px 0 0 var(--k-orange);
+}
+
+.rowSelected td {
   color: #fff;
-  font-family: var(--mono);
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border-radius: 4px;
-  padding: 3px 7px;
-  vertical-align: middle;
 }
 
 .tableNote {

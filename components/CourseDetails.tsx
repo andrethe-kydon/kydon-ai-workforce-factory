@@ -38,18 +38,16 @@ const entryRequirements = [
   "Prior programming or data analysis experience is advantageous but not required",
 ];
 
-const feeRows: { eligibility: string; fee: string; highlight?: boolean }[] = [
-  {
-    eligibility: "SSG ISCA (Additional Funding Support)",
-    fee: "S$1,724.80",
-    highlight: true,
-  },
+const feeRows: { eligibility: string; fee: string }[] = [
   { eligibility: "Singapore Citizens aged 40 and above", fee: "S$2,844.80" },
   { eligibility: "Singapore Citizens aged below 40", fee: "S$7,324.80" },
   { eligibility: "Singapore Permanent Residents", fee: "S$7,324.80" },
   { eligibility: "LTVP+ Holders", fee: "S$7,324.80" },
   { eligibility: "Unsubsidised (Full Course Fee)", fee: "S$24,416.00" },
 ];
+
+// Default to the most-subsidised tier (Singapore Citizens aged 40 and above).
+const DEFAULT_FEE_INDEX = 0;
 
 const paymentMethods = [
   "SkillsFuture Credits",
@@ -89,6 +87,7 @@ function TickIcon() {
 
 export default function CourseDetails() {
   const [active, setActive] = useState(0);
+  const [selectedFee, setSelectedFee] = useState(DEFAULT_FEE_INDEX);
 
   return (
     <section className={styles.section} id="course-details">
@@ -134,7 +133,6 @@ export default function CourseDetails() {
               <p className={styles.note}>
                 This course is offered under the SkillsFuture Career Transition
                 Programme (SCTP), administered by SkillsFuture Singapore.
-                Programme details are subject to final confirmation.
               </p>
             </div>
           )}
@@ -153,10 +151,10 @@ export default function CourseDetails() {
               <p className={styles.note}>
                 Applicants who do not meet the minimum qualification may still be
                 considered on a case-by-case basis. If you are unsure whether you
-                qualify, join the waitlist and our team will be in touch.
+                qualify, apply and our team will be in touch.
               </p>
               <a href="#final-cta" className="btn-grad">
-                Join the Waitlist
+                Apply Now
               </a>
             </div>
           )}
@@ -166,15 +164,15 @@ export default function CourseDetails() {
             <div className={styles.tabContent}>
               <div className={styles.placeholder}>
                 <h3 className={styles.placeholderTitle}>
-                  Schedule to Be Confirmed
+                  Detailed Timetable Available on Application
                 </h3>
                 <p className={styles.placeholderBody}>
-                  The detailed course timetable for Cohort 1 (September 2026)
-                  will be published ahead of the registration period opening on
-                  24 May 2026. Join the waitlist to be among the first notified.
+                  The full course timetable for Cohort 1 (September 2026) is
+                  shared with applicants during the enrolment process. Apply now
+                  and our admissions team will walk you through the schedule.
                 </p>
                 <a href="#final-cta" className="btn-grad">
-                  Join the Waitlist
+                  Apply Now
                 </a>
               </div>
             </div>
@@ -187,19 +185,24 @@ export default function CourseDetails() {
               <div className={styles.feeHero}>
                 <div className={styles.feeStat}>
                   <span className={styles.feeStatValue}>S$24,416.00</span>
-                  <span className={styles.feeStatLabel}>Unsubsidised</span>
+                  <span className={styles.feeStatLabel}>
+                    Full course fee before subsidy
+                  </span>
                 </div>
                 <div className={`${styles.feeStat} ${styles.feeStatPrimary}`}>
                   <span className={`${styles.feeStatValue} grad-text`}>
-                    From S$1,724.80
+                    {feeRows[selectedFee].fee}
                   </span>
                   <span className={styles.feeStatLabel}>
-                    With ISCA Funding Support
+                    {feeRows[selectedFee].eligibility}
                   </span>
                 </div>
               </div>
 
-              {/* Fee table */}
+              {/* Fee table — select your eligibility */}
+              <span className={styles.blockLabel}>
+                Select your eligibility to see your fee
+              </span>
               <div className={styles.tableWrap}>
                 <table className={styles.feeTable}>
                   <thead>
@@ -209,17 +212,24 @@ export default function CourseDetails() {
                     </tr>
                   </thead>
                   <tbody>
-                    {feeRows.map((row) => (
+                    {feeRows.map((row, i) => (
                       <tr
                         key={row.eligibility}
-                        className={row.highlight ? styles.rowHighlight : ""}
+                        className={`${styles.feeRow} ${
+                          selectedFee === i ? styles.rowSelected : ""
+                        }`}
+                        onClick={() => setSelectedFee(i)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            setSelectedFee(i);
+                          }
+                        }}
+                        role="button"
+                        tabIndex={0}
+                        aria-pressed={selectedFee === i}
                       >
-                        <td>
-                          {row.eligibility}
-                          {row.highlight && (
-                            <span className={styles.bestValue}>Best Value</span>
-                          )}
-                        </td>
+                        <td>{row.eligibility}</td>
                         <td className={styles.feeCell}>{row.fee}</td>
                       </tr>
                     ))}
@@ -228,7 +238,9 @@ export default function CourseDetails() {
               </div>
               <p className={styles.tableNote}>
                 All fees are inclusive of 9% GST and exclusive of supplementary
-                fees. Individual module fees are available upon request.
+                fees. Subsidy eligibility follows the prevailing SkillsFuture
+                Singapore criteria. Individual module fees are available upon
+                request.
               </p>
 
               {/* Payment methods */}

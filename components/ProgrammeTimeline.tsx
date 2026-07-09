@@ -18,27 +18,27 @@ const pathways = [
   {
     key: "entrepreneurship",
     icon: "🚀",
-    tag: "Self-Employed",
-    title: "Entrepreneurship Track",
-    body: "Graduate and launch your own AI-powered One Person Company. Self-source and operate your own projects with ongoing Kydon mentorship and guidance.",
+    tag: "Founder",
+    title: "Launch Your Own OPC",
+    body: "Graduates who go the entrepreneurship route build and run their own AI-powered One Person Company — serving real clients, operating lean, and growing on their own terms. Kydon's mentorship and ecosystem remain available to support your journey.",
     points: [
-      "Self-source and operate your own projects",
-      "Kydon mentorship and advisory support",
-      "Access to Kydon's ecosystem and network",
-      "Goal: a revenue-generating OPC",
+      "Identify your niche and validate your market",
+      "Build and launch a revenue-generating OPC",
+      "Operate with AI-powered systems from day one",
+      "Continue with Kydon mentorship and network access",
     ],
   },
   {
     key: "operator",
     icon: "🏢",
-    tag: "Employed · 6 Months",
-    title: "AI Operator Track",
-    body: "Graduate and join Kydon as an employed AI Operator for 6 months. Operate self-sourced projects under Kydon's structure with dedicated guidance throughout.",
+    tag: "AI Specialist",
+    title: "Become a Professional AI Operator",
+    body: "Graduates who take the AI Operator route step into a fast-growing market as qualified AI specialists — helping businesses build, deploy, and run AI-powered systems. The skills you build in this programme are exactly what organisations are looking for right now.",
     points: [
-      "Employed under Kydon for 6 months",
-      "Self-sourced projects, Kydon-guided delivery",
-      "Structured mentorship and performance support",
-      "Goal: establish yourself as a professional AI Operator",
+      "Deploy AI systems and automation for businesses",
+      "Operate as a specialist in a high-demand field",
+      "Apply your OPC skillset across multiple industries",
+      "Leverage your Kydon certification to stand out",
     ],
   },
 ];
@@ -62,7 +62,7 @@ export default function ProgrammeTimeline() {
         </h2>
         <p className={styles.subheading}>
           Train full-time across 8 modules with Kydon and Singapore Polytechnic.
-          On graduation, choose the track that fits your ambition.
+          Here is what graduates go on to do.
         </p>
 
         {/* Phase 1 — full-width training step */}
@@ -89,7 +89,7 @@ export default function ProgrammeTimeline() {
         <div className={styles.forkWrap}>
           <div className={styles.forkLine} />
           <span className={styles.forkLabel}>
-            Upon Graduation · Choose Your Track
+            Your Graduation Outcomes
           </span>
           <div className={styles.forkLine} />
         </div>

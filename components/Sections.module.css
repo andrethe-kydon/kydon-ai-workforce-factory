@@ -126,6 +126,40 @@
   margin-top: 4px;
 }
 .probBody strong { color: var(--ltext); font-weight: 600; }
+.probBody + .probBody { margin-top: 14px; }
+
+/* ── REWIRE framework row ── */
+.rewireRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 28px;
+}
+.rewireStep {
+  padding: 14px 16px;
+  background: var(--ls);
+  border: 1px solid var(--lborder);
+  border-radius: var(--rl);
+}
+.rewireHead {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ltext);
+  margin-bottom: 6px;
+}
+.rewireNum {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--k-orange2);
+  letter-spacing: 0.08em;
+  margin-right: 7px;
+}
+.rewireText {
+  font-size: 11px;
+  color: var(--lmuted);
+  line-height: 1.45;
+}
 
 .shiftHeading {
   font-size: 10px;
@@ -592,4 +626,5 @@
   .faqLayout { grid-template-columns: 1fr; gap: 36px; }
   .faqSide { position: static; }
   .tbarInner { gap: 12px; }
+  .rewireRow { grid-template-columns: repeat(2, 1fr); }
 }

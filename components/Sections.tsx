@@ -31,10 +31,17 @@ export function TrustBar() {
    PROBLEM
 ───────────────────────────────────────── */
 const shifts = [
-  { icon: "⚡", title: "Compressed Team Economics", body: "AI enables one person to produce what a team of 5 once could, reshaping firm-size economics permanently." },
-  { icon: "🏗️", title: "The Rise of AI Operators", body: "Competitive SMEs are shifting to agile AI Operators contracted for outcomes, not hours." },
+  { icon: "⚡", title: "Compressed Team Economics", body: "Every hour you spend on administrative work is an hour taken from your core expertise. AI handles the forms and the formatting — you focus on the thinking and the relationships." },
+  { icon: "🏗️", title: "The Rise of AI Operators", body: "Fluency in AI is the new professional baseline. Those who can synthesize, narrate, and direct AI systems will command the premium that purely technical or purely human roles no longer can." },
   { icon: "🇸🇬", title: "Singapore NAS 2.0 Mandate", body: "The National AI Strategy 2.0 calls for 15,000 new AI practitioners, yet no structured income pathway exists." },
   { icon: "📈", title: "The OPC as the New Unit", body: "One Person Companies, AI-augmented, are the most resilient economic production unit of our era." },
+];
+
+const rewire = [
+  { num: "01", term: "Recognize", text: "Accept the AI reality without fear" },
+  { num: "02", term: "Engage", text: "Actively work with new tools, not around them" },
+  { num: "03", term: "Weaken", text: "Consciously drop legacy workflows that no longer serve you" },
+  { num: "04", term: "Embed", text: "Integrate AI into your daily professional identity" },
 ];
 
 export function Problem() {
@@ -43,8 +50,8 @@ export function Problem() {
       <div className={styles.container}>
         <span className="section-tag-light">The Opportunity</span>
         <h2 className={styles.headingLight}>
-          The Employment Contract Is{" "}
-          <span className="grad-text">Changing.</span>
+          Stop Being the Processor.<br />
+          <span className="grad-text">Start Being the Strategist.</span>
         </h2>
         <div className={styles.probGrid}>
           <div>
@@ -57,9 +64,28 @@ export function Problem() {
               <p className={styles.probDesc}>mid-career professionals lack a credible pathway into AI-native, income-generating work.</p>
             </div>
             <p className={styles.probBody}>
-              The old playbook of degree, company, salary, repeat was built for a world being rapidly rewritten.{" "}
-              <strong>The question is no longer whether AI will affect you. It is whether you will use AI, or be replaced by someone who does.</strong>
+              AI is not coming for your career. It is coming for the parts of your
+              job that should have been automated years ago — the admin, the
+              reporting, the repetitive. What it cannot replace is your contextual
+              judgment, your empathy, and your ability to turn ideas into outcomes.
             </p>
+            <p className={styles.probBody}>
+              The professionals who thrive will be <strong>AI-bilingual</strong>:
+              fluent enough to direct AI as an extended brain, sharp enough to
+              provide the human premium it cannot replicate. That is not a distant
+              skill. It is something you can build deliberately, starting now.
+            </p>
+            <div className={styles.rewireRow}>
+              {rewire.map((r) => (
+                <div key={r.num} className={styles.rewireStep}>
+                  <div className={styles.rewireHead}>
+                    <span className={styles.rewireNum}>{r.num}</span>
+                    {r.term}
+                  </div>
+                  <p className={styles.rewireText}>{r.text}</p>
+                </div>
+              ))}
+            </div>
           </div>
           <div>
             <p className={styles.shiftHeading}>What's shifting right now →</p>
@@ -97,8 +123,8 @@ const stages = [
     num: "02",
     mono: "Upon Graduation · Choose Your Track",
     title: "Choose",
-    body: "On graduation, choose the path that fits your ambition: launch your own venture, or operate under Kydon's structure. Either way, Kydon's guidance continues.",
-    points: ["Entrepreneurship Track: self-employed", "AI Operator Track: employed for 6 months", "Ongoing Kydon mentorship on both tracks", "Access to Kydon's ecosystem and network"],
+    body: "On graduation, choose the path that fits your ambition: launch your own venture, or step into the market as a qualified AI specialist. Either way, Kydon's guidance continues.",
+    points: ["Entrepreneurship Track: launch your own OPC", "AI Operator Track: a qualified AI specialist", "Ongoing Kydon mentorship on both tracks", "Access to Kydon's ecosystem and network"],
     badge: null,
   },
   {
@@ -148,14 +174,14 @@ export function Solution() {
    FOR INDIVIDUALS
 ───────────────────────────────────────── */
 const steps = [
-  { num: "01", title: "Apply & Get Selected", body: "We select professionals with entrepreneurial intent across any domain. Marketing, finance, HR, operations, healthcare. Your domain expertise is the asset. We teach you the agentic AI layer on top of it.", grant: null },
-  { num: "02", title: "Train Full-Time: 5 Months", body: "Five months of full-time training across 8 modules and 580.5 hours, delivered in collaboration with Singapore Polytechnic. Build real agentic workflows, low-code solutions, and data foundations. Every module produces something real.", grant: null },
-  { num: "03", title: "Graduate & Choose Your Track", body: "Earn 8 Certificates of Completion, then choose your path: launch your own OPC on the Entrepreneurship Track, or join Kydon as an employed AI Operator for 6 months on the AI Operator Track.", grant: null },
-  { num: "04", title: "Grow with Kydon's Ecosystem", body: "Whichever track you choose, Kydon's mentorship continues, with access to our enterprise client marketplace, advisory support, and a network of fellow AI operators and OPC founders.", grant: null },
+  { num: "01", title: "Apply & Get Selected", body: "We select professionals from any domain — marketing, finance, HR, operations, healthcare. Your existing expertise is the asset. The programme teaches you to amplify it with agentic AI.", grant: null },
+  { num: "02", title: "Train Full-Time: 5 Months", body: "Five months of full-time training across 8 modules and 580.5 hours, delivered jointly with Singapore Polytechnic. You do not just learn AI — you build with it. Every module produces a real deliverable for your own OPC.", grant: null },
+  { num: "03", title: "Graduate & Choose Your Track", body: "Earn 8 Certificates of Completion and step into the future you trained for. Launch your own AI-powered One Person Company on the Entrepreneurship Track, or enter the market as a qualified AI specialist on the AI Operator Track.", grant: null },
+  { num: "04", title: "Grow with Kydon's Ecosystem", body: "Whichever path you take, Kydon's network and mentorship remain available — connecting you to fellow graduates, advisors, and opportunities that keep compounding as your OPC grows.", grant: null },
 ];
 
 const outcomes = [
-  { num: "$8K+", body: "Target monthly revenue for a fully operational AI-service OPC within 12 months of launch.", dark: false },
+  { num: "Your Domain + AI", body: "You bring the professional expertise. We teach you to direct AI as your extended brain — so your contextual judgment and human insight do the work that no model can replicate.", dark: true },
   { num: "8 Modules", body: "580.5 hours of hands-on training, earning 8 Certificates of Completion, one per module.", dark: false },
   { num: "Agentic AI Certified", body: "Graduate with Kydon's Certificates of Completion, subject to final programme confirmation with our programme partners.", dark: true },
 ];
@@ -198,7 +224,7 @@ export function ForIndividuals() {
                 </div>
               ))}
               <a href="#final-cta" className="btn-grad" style={{ textAlign: "center" }}>
-                Join the Waitlist →
+                Apply Now →
               </a>
             </div>
           </div>
