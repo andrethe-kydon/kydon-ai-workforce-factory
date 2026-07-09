@@ -71,6 +71,82 @@
   line-height: 1.4;
 }
 
+/* ── Programme overview ── */
+.overview {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 32px;
+  background: var(--k-bg2);
+  border: 1px solid var(--k-border);
+  border-radius: var(--rxl);
+  padding: 28px;
+  margin-top: 28px;
+}
+
+.ovLeft,
+.ovRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.ovLabel {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--k-orange);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.ovBody {
+  font-size: 13px;
+  color: var(--text-s);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.ovBody:last-child {
+  margin-bottom: 0;
+}
+
+.rolesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.roleChip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--k-bg3);
+  border: 1px solid var(--k-border);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--text-p);
+  line-height: 1.3;
+}
+
+.roleIcon {
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.rolesNote {
+  font-size: 11px;
+  color: var(--text-m);
+  line-height: 1.5;
+}
+
+.overviewDivider {
+  height: 1px;
+  background: var(--k-border);
+  margin: 32px 0 8px;
+}
+
 /* ── Accordion (matches Curriculum) ── */
 .accordion {
   display: flex;
@@ -347,11 +423,21 @@
   .postGradCols {
     grid-template-columns: 1fr;
   }
+  .overview {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 @media (max-width: 480px) {
   .section {
     padding: 72px 5vw;
+  }
+  .rolesGrid {
+    grid-template-columns: 1fr;
+  }
+  .overview {
+    padding: 22px 18px;
   }
   .itemHeader {
     padding: 16px;

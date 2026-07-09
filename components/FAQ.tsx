@@ -13,6 +13,22 @@ const faqs = [
     a: "The full course fee is S$24,416.00, inclusive of 9% GST. Because the programme is offered under the SkillsFuture Career Transition Programme (SCTP), most participants pay significantly less after subsidy: S$2,844.80 for Singapore Citizens aged 40 and above, and S$7,324.80 for Singapore Citizens below 40, Permanent Residents, and LTVP+ holders. SkillsFuture Credits and PSEA can be applied, and Singaporeans aged 25 and above are eligible to use SkillsFuture Credit. See the Course Fees section for the full breakdown. Fees remain subject to final confirmation with our programme partners, and joining the waitlist involves no financial commitment of any kind.",
   },
   {
+    q: "What is the SCTP and why does it matter?",
+    a: "The SkillsFuture Career Transition Programme (SCTP) is a government-backed initiative administered by SkillsFuture Singapore that helps mid-career professionals transition into new and in-demand sectors. Being part of SCTP means this programme meets SSG's accreditation standards, qualifies for significant course fee subsidies, and is recognised across Singapore's hiring ecosystem. For participants, it means the training you receive is not just rigorous — it is officially recognised.",
+  },
+  {
+    q: "What is Singapore Polytechnic's role in this programme?",
+    a: "Singapore Polytechnic's School of Computing delivers three of the eight modules — Programming for Data Science, Database Management Systems, and Data Wrangling and Visualisation — in full to SP's own accredited syllabus. These three modules cover 212 of the programme's 580.5 hours and form the technical data foundation of the programme. The remaining five modules are delivered by Kydon, covering the OPC business framework, agentic AI systems, low-code build, and launch readiness. All eight Certificates of Completion are issued by Singapore Polytechnic.",
+  },
+  {
+    q: "What funding is available and who qualifies?",
+    a: "Course fees are significantly subsidised under SSG's funding framework. The total unsubsidised fee across all 8 modules is S$24,416. Depending on your eligibility, the subsidised fee can be as low as S$2,844.80 for Singapore Citizens aged 40 and above. Singapore Citizens below 40, Permanent Residents, and LTVP+ holders pay S$7,324.80. All fees include 9% GST. SkillsFuture Credits can also be used to offset fees for Singaporeans aged 25 and above. Full fee details are available in the Course Fees tab under Course Information on this page.",
+  },
+  {
+    q: "What certificates will I receive and who issues them?",
+    a: "You receive 8 Certificates of Completion — one for each module — issued by Singapore Polytechnic upon successful completion of each module. The certificates are awarded under the SCTP Intelligent Data-Driven Digitalisation programme and are recognised across Singapore's workforce ecosystem. The full list of certificates is shown on each module card in the Course Structure section above.",
+  },
+  {
     q: "Do I need a coding background to join?",
     a: "No. The Kydon AI Workforce Factory is built for professionals with domain expertise, not developers. If you understand how a business process works, we teach you how to automate it with agentic AI. Our graduates come from marketing, finance, HR, operations, healthcare, and consulting backgrounds.",
   },

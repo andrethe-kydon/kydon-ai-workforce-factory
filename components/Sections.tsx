@@ -110,6 +110,11 @@ export function Problem() {
 /* ─────────────────────────────────────────
    SOLUTION
 ───────────────────────────────────────── */
+/* SOLUTION — preserved but not rendered. Removed from the page as redundant with
+   ProgrammeTimeline ("Five Months of Training. Two Ways Forward."). To restore:
+   uncomment this block, delete the stub below, and re-add <Solution /> (plus its
+   import) in app/page.tsx.
+
 const stages = [
   {
     num: "01",
@@ -169,6 +174,12 @@ export function Solution() {
     </section>
   );
 }
+*/
+
+// Stub kept so the named export still resolves; renders nothing.
+export function Solution() {
+  return null;
+}
 
 /* ─────────────────────────────────────────
    FOR INDIVIDUALS
@@ -183,7 +194,7 @@ const steps = [
 const outcomes = [
   { num: "Your Domain + AI", body: "You bring the professional expertise. We teach you to direct AI as your extended brain — so your contextual judgment and human insight do the work that no model can replicate.", dark: true },
   { num: "8 Modules", body: "580.5 hours of hands-on training, earning 8 Certificates of Completion, one per module.", dark: false },
-  { num: "Agentic AI Certified", body: "Graduate with Kydon's Certificates of Completion, subject to final programme confirmation with our programme partners.", dark: true },
+  { num: "Agentic AI Certified", body: "Graduate with 8 Certificates of Completion issued by Singapore Polytechnic — one per module — upon successful completion of the SCTP Intelligent Data-Driven Digitalisation programme. Subject to final programme confirmation.", dark: true },
 ];
 
 export function ForIndividuals() {

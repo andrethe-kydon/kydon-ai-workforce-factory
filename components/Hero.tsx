@@ -40,7 +40,7 @@ export default function Hero() {
           <a href="#final-cta" className="btn-grad">
             Join the Waitlist →
           </a>
-          <a href="#solution" className={styles.ghost}>
+          <a href="#programme-timeline" className={styles.ghost}>
             Explore the Programme
           </a>
         </div>

@@ -203,6 +203,58 @@ export default function CourseStructure() {
           Data-Driven Digitalisation
         </span>
 
+        {/* Programme overview */}
+        <div className={styles.overview}>
+          <div className={styles.ovLeft}>
+            <span className={styles.ovLabel}>About This Programme</span>
+            <p className={styles.ovBody}>
+              The SCTP Intelligent Data-Driven Digitalisation programme is a
+              SkillsFuture Career Transition Programme administered by
+              SkillsFuture Singapore and delivered in partnership between Kydon
+              Group and Singapore Polytechnic&apos;s School of Computing.
+            </p>
+            <p className={styles.ovBody}>
+              Kydon brings the OPC methodology — the business-building framework,
+              agentic AI systems, and operator mindset. SP brings the academic
+              rigour — three full modules in programming, databases, and data
+              science delivered to SP&apos;s own accredited syllabus.
+            </p>
+            <p className={styles.ovBody}>
+              Together, the programme covers 22 approved learning outcomes across
+              data engineering, AI development, low-code solutions, and
+              professional skills — preparing graduates for four in-demand roles
+              in Singapore&apos;s AI economy.
+            </p>
+          </div>
+          <div className={styles.ovRight}>
+            <span className={styles.ovLabel}>Graduate Career Roles</span>
+            <div className={styles.rolesGrid}>
+              <span className={styles.roleChip}>
+                <span className={styles.roleIcon} aria-hidden="true">📊</span>
+                Data Analyst
+              </span>
+              <span className={styles.roleChip}>
+                <span className={styles.roleIcon} aria-hidden="true">🛠️</span>
+                Associate Data Engineer
+              </span>
+              <span className={styles.roleChip}>
+                <span className={styles.roleIcon} aria-hidden="true">🔄</span>
+                Digital Transformation Executive
+              </span>
+              <span className={styles.roleChip}>
+                <span className={styles.roleIcon} aria-hidden="true">📈</span>
+                Product Analyst
+              </span>
+            </div>
+            <p className={styles.rolesNote}>
+              Roles aligned to the approved IDDD course outcomes.
+            </p>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className={styles.overviewDivider} />
+
         {/* Module groups */}
         {groups.map((group) => (
           <div key={group.label} className={styles.group}>

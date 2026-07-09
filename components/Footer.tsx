@@ -6,7 +6,7 @@ const cols = [
   {
     heading: "Programme",
     links: [
-      { href: "#solution",        label: "The Factory" },
+      { href: "#programme-timeline",        label: "The Factory" },
       { href: "#for-individuals", label: "For Individuals" },
       { href: "#for-enterprises", label: "For Enterprises" },
       { href: "#faq",             label: "FAQ" },
@@ -24,10 +24,10 @@ const cols = [
   {
     heading: "Skills",
     links: [
-      { href: "#solution", label: "Agentic AI" },
-      { href: "#solution", label: "Prompt Engineering" },
-      { href: "#solution", label: "Workflow Design" },
-      { href: "#solution", label: "OPC Operations" },
+      { href: "#programme-timeline", label: "Agentic AI" },
+      { href: "#programme-timeline", label: "Prompt Engineering" },
+      { href: "#programme-timeline", label: "Workflow Design" },
+      { href: "#programme-timeline", label: "OPC Operations" },
     ],
   },
 ];

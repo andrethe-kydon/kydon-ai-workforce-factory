@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import {
   TrustBar,
   Problem,
-  Solution,
+  // Solution, // removed from page — redundant with ProgrammeTimeline (kept for restore)
   ForIndividuals,
   ForEnterprises,
   TrustSection,
@@ -24,7 +24,7 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <Problem />
-        <Solution />
+        {/* <Solution /> removed — redundant with ProgrammeTimeline */}
         <ProgrammeTimeline />
         <CourseStructure />
         <ForIndividuals />
