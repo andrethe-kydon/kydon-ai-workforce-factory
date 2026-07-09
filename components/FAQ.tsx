@@ -5,12 +5,12 @@ import styles from "./Sections.module.css";
 
 const faqs = [
   {
-    q: "When does the programme start and how do I apply?",
-    a: "The OPC Launchpad is offered under the SkillsFuture Career Transition Programme (SCTP), delivered by Kydon in collaboration with Singapore Polytechnic. Applications for Cohort 1 are open now. The programme begins on 6 September 2026 and runs to 4 March 2027, with registration closing on 16 August 2026 or once all places are filled. Places are limited to 30 participants, so we encourage you to apply early — hit Apply Now and our admissions team will guide you through the next steps.",
+    q: "Is this programme confirmed and when does it start?",
+    a: "The OPC Launchpad is offered under the SkillsFuture Career Transition Programme (SCTP), delivered by Kydon in collaboration with Singapore Polytechnic. Cohort 1 is targeted to begin on 6 September 2026 and run to 4 March 2027. We are finalising the programme with our partners ahead of launch, so some details remain subject to confirmation. Joining the waitlist is an expression of interest only, with no commitment or financial obligation — we will notify all waitlist members directly with confirmed details ahead of applications opening.",
   },
   {
     q: "How much does the programme cost?",
-    a: "The full course fee is S$24,416.00, inclusive of 9% GST. Because the programme is offered under the SkillsFuture Career Transition Programme (SCTP), most participants pay significantly less after subsidy: S$2,844.80 for Singapore Citizens aged 40 and above, and S$7,324.80 for Singapore Citizens below 40, Permanent Residents, and LTVP+ holders. SkillsFuture Credits and PSEA can be applied, and Singaporeans aged 25 and above are eligible to use SkillsFuture Credit. Subsidy eligibility follows the prevailing SkillsFuture Singapore criteria. See the Course Fees section for the full breakdown.",
+    a: "The full course fee is S$24,416.00, inclusive of 9% GST. Because the programme is offered under the SkillsFuture Career Transition Programme (SCTP), most participants pay significantly less after subsidy: S$2,844.80 for Singapore Citizens aged 40 and above, and S$7,324.80 for Singapore Citizens below 40, Permanent Residents, and LTVP+ holders. SkillsFuture Credits and PSEA can be applied, and Singaporeans aged 25 and above are eligible to use SkillsFuture Credit. See the Course Fees section for the full breakdown. Fees remain subject to final confirmation with our programme partners, and joining the waitlist involves no financial commitment of any kind.",
   },
   {
     q: "Do I need a coding background to join?",
@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "Who is eligible to join the programme?",
-    a: "Entry is open to applicants with a Higher Nitec qualification or equivalent, basic English proficiency, and foundational numeracy. You should be comfortable with everyday digital tools such as Microsoft Excel; prior programming or data analysis experience is advantageous but not required. Applicants who do not meet the minimum qualification may still be considered on a case-by-case basis — apply and our team will be in touch.",
+    a: "Entry is open to applicants with a Higher Nitec qualification or equivalent, basic English proficiency, and foundational numeracy. You should be comfortable with everyday digital tools such as Microsoft Excel; prior programming or data analysis experience is advantageous but not required. Applicants who do not meet the minimum qualification may still be considered on a case-by-case basis — join the waitlist and our team will be in touch.",
   },
 ];
 
@@ -80,16 +80,17 @@ export function FAQ() {
           {/* Right: sticky sidebar */}
           <div>
             <div className={styles.faqSide}>
-              <h3 className={styles.faqSideTitle}>Ready to Apply?</h3>
+              <h3 className={styles.faqSideTitle}>Be First to Know.</h3>
               <p className={styles.faqSideBody}>
-                Applications for Cohort 1 are open. Apply now to secure your place — spaces are
-                limited to 30 participants and registration closes on 16 August 2026.
+                The programme is being finalised with our partners ahead of launch. Join the
+                waitlist to be among the first notified when Cohort 1 officially opens, and to
+                help shape the programme.
               </p>
               <a href="#final-cta" className="btn-grad" style={{ display: "block", textAlign: "center" }}>
-                Apply Now →
+                Join the Waitlist →
               </a>
               <ul style={{ listStyle: "none", padding: 0, margin: "16px 0 0", display: "flex", flexDirection: "column", gap: "8px" }}>
-                {["A place in Cohort 1, September 2026", "Full programme and funding guidance", "A personal call with our admissions team"].map((item) => (
+                {["First access to Cohort 1 applications", "Full programme and funding details", "Invitation to our pre-launch briefing"].map((item) => (
                   <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "13px", color: "var(--muted, #888)" }}>
                     <span style={{ color: "#f97316", flexShrink: 0, marginTop: "2px" }}>●</span>
                     {item}

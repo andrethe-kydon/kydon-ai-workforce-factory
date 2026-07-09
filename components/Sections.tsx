@@ -224,7 +224,7 @@ export function ForIndividuals() {
                 </div>
               ))}
               <a href="#final-cta" className="btn-grad" style={{ textAlign: "center" }}>
-                Apply Now →
+                Join the Waitlist →
               </a>
             </div>
           </div>

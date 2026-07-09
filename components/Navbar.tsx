@@ -90,7 +90,7 @@ export default function Navbar() {
             Brochure
           </a>
           <a href="#final-cta" className="btn-grad" style={{ padding: "8px 20px", fontSize: "13px" }}>
-            Apply Now →
+            Join Waitlist →
           </a>
         </div>
 
@@ -138,7 +138,7 @@ export default function Navbar() {
             style={{ textAlign: "center", marginTop: "8px" }}
             onClick={() => setMenuOpen(false)}
           >
-            Apply Now →
+            Join Waitlist →
           </a>
         </div>
       )}

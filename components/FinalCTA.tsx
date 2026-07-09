@@ -7,13 +7,13 @@ export default function FinalCTA() {
       <div className={styles.orb} aria-hidden="true" />
       <div className={styles.inner}>
         <h2 className={styles.heading}>
-          Apply for{" "}
-          <span className="grad-text">Cohort 1.</span>
+          Be First{" "}
+          <span className="grad-text">in Line.</span>
         </h2>
         <p className={styles.sub}>
-          Applications for the Kydon AI Workforce Factory are open. Secure your place in
-          Singapore&apos;s most intensive agentic AI programme — spaces for Cohort 1 are
-          limited to 30 participants.
+          The Kydon AI Workforce Factory is being finalised ahead of launch. Join the waitlist
+          now to be among the first notified when Cohort 1 officially opens, and to help shape
+          the programme before it launches.
         </p>
 
         <HubSpotForm />
@@ -36,12 +36,13 @@ export default function FinalCTA() {
         </div>
 
         <p className={styles.note}>
-          The first cohort is limited to 30 participants and begins in September 2026. Apply
-          early — registration closes on 16 August 2026 or once all places are filled.
+          The first cohort is limited to 30 participants and is targeted for September 2026.
+          Join the waitlist now to be among the first notified and to help shape the programme
+          before it launches.
         </p>
         <p className={styles.disclaimer}>
-          Fees shown are inclusive of 9% GST. Subsidy eligibility is subject to the prevailing
-          SkillsFuture Singapore criteria.
+          Programme fees and final details are subject to confirmation with programme partners.
+          Joining the waitlist involves no financial commitment or obligation of any kind.
         </p>
       </div>
     </section>

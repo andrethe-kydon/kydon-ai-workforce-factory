@@ -18,7 +18,7 @@ export default function Hero() {
         {/* Live badge */}
         <div className={styles.pill}>
           <span className={styles.dot} />
-          <span>Now Enrolling · Singapore · Cohort 1 · Sep 2026</span>
+          <span>Market Sensing Phase · Singapore · Cohort 1 · Sep 2026</span>
         </div>
 
         {/* Headline */}
@@ -38,7 +38,7 @@ export default function Hero() {
         {/* CTAs */}
         <div className={styles.ctas}>
           <a href="#final-cta" className="btn-grad">
-            Apply Now →
+            Join the Waitlist →
           </a>
           <a href="#solution" className={styles.ghost}>
             Explore the Programme

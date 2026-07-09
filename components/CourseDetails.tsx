@@ -133,6 +133,7 @@ export default function CourseDetails() {
               <p className={styles.note}>
                 This course is offered under the SkillsFuture Career Transition
                 Programme (SCTP), administered by SkillsFuture Singapore.
+                Programme details are subject to final confirmation.
               </p>
             </div>
           )}
@@ -151,11 +152,9 @@ export default function CourseDetails() {
               <p className={styles.note}>
                 Applicants who do not meet the minimum qualification may still be
                 considered on a case-by-case basis. If you are unsure whether you
-                qualify, apply and our team will be in touch.
+                qualify, join the waitlist and our team will be in touch.
               </p>
-              <a href="#final-cta" className="btn-grad">
-                Apply Now
-              </a>
+              <a href="#final-cta" className="btn-grad">Join the Waitlist</a>
             </div>
           )}
 
@@ -164,16 +163,14 @@ export default function CourseDetails() {
             <div className={styles.tabContent}>
               <div className={styles.placeholder}>
                 <h3 className={styles.placeholderTitle}>
-                  Detailed Timetable Available on Application
+                  Schedule to Be Confirmed
                 </h3>
                 <p className={styles.placeholderBody}>
-                  The full course timetable for Cohort 1 (September 2026) is
-                  shared with applicants during the enrolment process. Apply now
-                  and our admissions team will walk you through the schedule.
+                  The detailed course timetable for Cohort 1 (September 2026)
+                  will be published ahead of the programme launch. Join the
+                  waitlist to be among the first notified.
                 </p>
-                <a href="#final-cta" className="btn-grad">
-                  Apply Now
-                </a>
+                <a href="#final-cta" className="btn-grad">Join the Waitlist</a>
               </div>
             </div>
           )}
