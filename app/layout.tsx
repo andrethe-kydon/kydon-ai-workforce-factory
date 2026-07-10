@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://opc.kydongrp.com"),
   title: "Build Agentic AI. Launch Your Business. | Kydon AI Workforce Factory",
   description:
-    "Singapore's most intensive agentic AI programme. 5 months. Master agentic workflows, build your OPC, and launch an AI-powered business. Cohort 1 open now. 30 seats only.",
+    "Singapore's most intensive agentic AI programme. 5 months to master agentic workflows, build your OPC, and launch an AI-powered business. Cohort 1 targeted for September 2026. Join the waitlist.",
   keywords: [
     "AI workforce Singapore",
     "One Person Company Singapore",
@@ -30,14 +30,15 @@ export const metadata: Metadata = {
     "mid-career transition Singapore",
     "OPC Singapore",
     "AI entrepreneur Singapore",
-    "AI bootcamp Singapore",
+    "SCTP Singapore",
+    "SkillsFuture Career Transition Programme",
     "AI business Singapore",
     "mid-career switch Singapore",
     "AI Workforce Factory",
     "Kydon OPC",
     "agentic AI Singapore",
-    "AI workflow automation Singapore",
-    "n8n Singapore",
+    "Singapore Polytechnic AI",
+    "data science Singapore",
     "AI agent developer Singapore",
     "prompt engineering Singapore",
   ],
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Build Agentic AI. Launch Your Business. | Kydon AI Workforce Factory",
     description:
-      "Singapore's most intensive agentic AI programme. 5 months of full-time training with Singapore Polytechnic to master agentic workflows and launch your own AI-powered One Person Company. Cohort 1 open. 30 seats only.",
+      "Singapore's most intensive agentic AI programme. 5 months of full-time training with Singapore Polytechnic to master agentic workflows and launch your own AI-powered One Person Company. Cohort 1 targeted for September 2026. Join the waitlist.",
     url: "https://opc.kydongrp.com",
     siteName: "Kydon AI Workforce Factory",
     images: [
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Build Agentic AI. Launch Your Business. | Kydon AI Workforce Factory",
     description:
-      "Singapore's most intensive agentic AI programme. 5 months. Master agentic AI. Launch your OPC. 30 seats only.",
+      "Singapore's most intensive agentic AI programme. 5 months. Master agentic AI. Launch your OPC. Join the waitlist for Cohort 1.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -99,10 +100,10 @@ const jsonLd = {
     "@type": "Offer",
     name: "AI Workforce Factory Cohort 1",
     description: "5-month programme to build an AI-powered One Person Company",
-    price: "0",
+    price: "24416.00",
     priceCurrency: "SGD",
-    availability: "https://schema.org/LimitedAvailability",
-    validFrom: "2026-01-01",
+    availability: "https://schema.org/PreOrder",
+    validFrom: "2026-05-24",
   },
   provider: {
     "@type": "Organization",
