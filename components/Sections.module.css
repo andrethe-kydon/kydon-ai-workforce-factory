@@ -23,7 +23,7 @@
   line-height: 1.0;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #fff;
+  color: var(--text-p);
   margin-bottom: 16px;
 }
 .headingLight {
@@ -81,8 +81,8 @@
 .tbarChip {
   padding: 4px 12px;
   border-radius: 4px;
-  background: rgba(255, 107, 43, 0.06);
-  border: 1px solid rgba(255, 107, 43, 0.14);
+  background: rgba(241, 85, 34, 0.06);
+  border: 1px solid rgba(241, 85, 34, 0.14);
   font-size: 11px;
   color: var(--text-s);
   font-family: var(--mono);
@@ -249,7 +249,7 @@
 .stageTitle {
   font-size: 26px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-p);
   margin-bottom: 10px;
   letter-spacing: -0.01em;
 }
@@ -285,8 +285,8 @@
 .stageBadge {
   display: inline-flex;
   margin-top: 16px;
-  background: rgba(255, 107, 43, 0.1);
-  border: 1px solid rgba(255, 107, 43, 0.22);
+  background: rgba(241, 85, 34, 0.1);
+  border: 1px solid rgba(241, 85, 34, 0.22);
   border-radius: 4px;
   padding: 5px 10px;
   font-family: var(--mono);
@@ -360,8 +360,8 @@
   margin-top: 8px;
   font-family: var(--mono);
   font-size: 10px;
-  background: rgba(255, 107, 43, 0.08);
-  border: 1px solid rgba(255, 107, 43, 0.22);
+  background: rgba(241, 85, 34, 0.08);
+  border: 1px solid rgba(241, 85, 34, 0.22);
   color: var(--k-orange2);
   padding: 3px 10px;
   border-radius: 4px;
@@ -396,8 +396,8 @@
   line-height: 1.5;
 }
 .ocDark {
-  background: var(--k-bg2);
-  border-color: var(--k-border);
+  background: #171717;
+  border-color: #262626;
 }
 .ocTitleDark {
   font-size: 20px;
@@ -407,7 +407,7 @@
 }
 .ocBodyDark {
   font-size: 13px;
-  color: var(--text-s);
+  color: rgba(255, 255, 255, 0.7);
   margin-top: 4px;
   line-height: 1.5;
 }
@@ -461,7 +461,7 @@
 .ebTitle {
   font-size: 13px;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-p);
   margin-bottom: 3px;
 }
 .ebBody {

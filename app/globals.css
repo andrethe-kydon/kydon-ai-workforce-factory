@@ -5,37 +5,41 @@
 }
 
 :root {
-  /* Kydon Brand — Dark Navy + Orange/Amber gradient */
-  --k-bg:       #0A0B14;
-  --k-bg2:      #0E1020;
-  --k-bg3:      #13152A;
-  --k-surface:  #181A30;
-  --k-surface2: #1F2240;
+  /* Kydon Brand — Light theme aligned to kydongrp.com */
+  --k-bg:       #ffffff;
+  --k-bg2:      #fafafa;
+  --k-bg3:      #f5f5f5;
+  --k-surface:  #ffffff;
+  --k-surface2: #f0f0f4;
 
-  /* Primary accent: Orange → Amber */
-  --k-orange:      #FF6B2B;
-  --k-orange2:     #F97316;
-  --k-amber:       #FBBF24;
-  --k-grad:        linear-gradient(135deg, #FF6B2B 0%, #FBBF24 100%);
-  --k-grad-btn:    linear-gradient(135deg, #FF6B2B 0%, #F59E0B 100%);
-  --k-grad-text:   linear-gradient(135deg, #FF8C42 0%, #FBBF24 100%);
+  /* Primary accent: Orange (aligned to kydongrp.com #f15522) */
+  --k-orange:      #f15522;
+  --k-orange2:     #d94a1c;
+  --k-amber:       #fbbf24;
+  --k-grad:        linear-gradient(135deg, #f15522 0%, #fbbf24 100%);
+  --k-grad-btn:    linear-gradient(135deg, #f15522 0%, #f59e0b 100%);
+  --k-grad-text:   linear-gradient(135deg, #f15522 0%, #f97316 100%);
+
+  /* Secondary accent: Brand purple */
+  --k-purple:      #4b2e83;
+  --k-purple2:     #6b4ea3;
 
   /* Borders & glows */
-  --k-border:  rgba(255, 107, 43, 0.15);
-  --k-border2: rgba(255, 107, 43, 0.30);
-  --k-glow:    rgba(255, 107, 43, 0.10);
+  --k-border:  #e6e7ec;
+  --k-border2: #d6d7de;
+  --k-glow:    rgba(241, 85, 34, 0.08);
 
-  /* Dark text palette */
-  --text-p: #F0F0FF;
-  --text-s: rgba(240, 240, 255, 0.55);
-  --text-m: rgba(240, 240, 255, 0.32);
+  /* Text palette (dark on light) */
+  --text-p: #171717;
+  --text-s: #52525b;
+  --text-m: #8a8a99;
 
   /* Light section palette */
-  --lb:      #F8F8FC;
-  --ls:      #FFFFFF;
-  --lborder: #EAEBF5;
-  --ltext:   #0A0B14;
-  --lmuted:  #5A5B7A;
+  --lb:      #fafafa;
+  --ls:      #ffffff;
+  --lborder: #e6e7ec;
+  --ltext:   #171717;
+  --lmuted:  #52525b;
 
   /* Typography */
   --font: var(--font-jakarta), 'Plus Jakarta Sans', sans-serif;
@@ -90,7 +94,7 @@ body {
 
 .btn-outline-o {
   display: inline-block;
-  border: 1px solid rgba(255, 107, 43, 0.4);
+  border: 1px solid rgba(241, 85, 34, 0.4);
   color: var(--k-orange);
   padding: 12px 28px;
   border-radius: 7px;

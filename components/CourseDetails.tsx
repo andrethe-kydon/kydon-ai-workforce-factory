@@ -35,6 +35,7 @@ const entryRequirements = [
   "Basic English proficiency",
   "Foundational numeracy skills",
   "Comfortable with digital tools such as Microsoft Excel",
+  "Bring your own laptop for use throughout the programme",
   "Prior programming or data analysis experience is advantageous but not required",
 ];
 

@@ -18,7 +18,7 @@
   line-height: 1.0;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #fff;
+  color: var(--text-p);
   margin-bottom: 16px;
   max-width: 820px;
 }
@@ -42,8 +42,8 @@
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  background: rgba(255, 107, 43, 0.10);
-  border: 1px solid rgba(255, 107, 43, 0.24);
+  background: rgba(241, 85, 34, 0.10);
+  border: 1px solid rgba(241, 85, 34, 0.24);
   border-radius: 999px;
   padding: 7px 16px;
   font-family: var(--mono);
@@ -60,8 +60,8 @@
   align-items: center;
   gap: 8px;
   margin-top: 18px;
-  background: rgba(255, 107, 43, 0.10);
-  border: 1px solid rgba(255, 107, 43, 0.24);
+  background: rgba(241, 85, 34, 0.10);
+  border: 1px solid rgba(241, 85, 34, 0.24);
   border-radius: 999px;
   padding: 8px 18px;
   font-family: var(--mono);
@@ -181,7 +181,7 @@
 }
 
 .itemHeader:hover {
-  background: rgba(255, 107, 43, 0.04);
+  background: rgba(241, 85, 34, 0.04);
 }
 
 .headerLeft {
@@ -201,8 +201,8 @@
   letter-spacing: 0.08em;
   white-space: nowrap;
   flex-shrink: 0;
-  background: rgba(255, 107, 43, 0.1);
-  border: 1px solid rgba(255, 107, 43, 0.2);
+  background: rgba(241, 85, 34, 0.1);
+  border: 1px solid rgba(241, 85, 34, 0.2);
   padding: 3px 9px;
   border-radius: 4px;
   text-transform: uppercase;
@@ -225,7 +225,7 @@
 .hours {
   font-family: var(--mono);
   font-size: 11px;
-  color: var(--k-amber);
+  color: var(--k-orange);
   letter-spacing: 0.06em;
   white-space: nowrap;
 }
@@ -342,7 +342,7 @@
 
 .totalStrong {
   font-weight: 700;
-  color: #fff;
+  color: var(--text-p);
 }
 
 .totalDot {
@@ -361,7 +361,7 @@
 .postGradHeading {
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-p);
   letter-spacing: -0.01em;
   margin-bottom: 20px;
 }

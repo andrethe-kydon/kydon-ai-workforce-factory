@@ -1,7 +1,7 @@
 .footer {
-  background: #050608;
+  background: var(--k-bg3);
   padding: 52px 5vw 28px;
-  border-top: 1px solid rgba(255, 107, 43, 0.08);
+  border-top: 1px solid rgba(241, 85, 34, 0.12);
 }
 .inner {
   max-width: 1180px;
@@ -15,8 +15,7 @@
 }
 .brand {}
 .logo {
-  filter: brightness(0) invert(1);
-  opacity: 0.6;
+  opacity: 0.75;
   height: 22px;
   width: auto;
   object-fit: contain;
@@ -54,7 +53,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
   flex-wrap: wrap;
   gap: 8px;
 }

@@ -18,7 +18,7 @@
   line-height: 1.0;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #fff;
+  color: var(--text-p);
   margin-bottom: 16px;
   max-width: 720px;
 }
@@ -67,7 +67,7 @@
 }
 
 .tabActive {
-  color: #fff;
+  color: var(--text-p);
   border-bottom-color: var(--k-orange);
 }
 
@@ -173,7 +173,7 @@
 .placeholderTitle {
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-p);
   letter-spacing: -0.01em;
   margin-bottom: 14px;
 }
@@ -213,7 +213,7 @@
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1;
-  color: #fff;
+  color: var(--text-p);
 }
 
 .feeStatLabel {
@@ -276,7 +276,7 @@
 }
 
 .feeRow:hover td {
-  color: #fff;
+  color: var(--text-p);
 }
 
 .feeRow:focus-visible {
@@ -288,12 +288,12 @@
 .rowSelected,
 .feeTable tbody tr.rowSelected:nth-child(odd),
 .feeTable tbody tr.rowSelected:nth-child(even) {
-  background: rgba(255, 107, 43, 0.14);
+  background: rgba(241, 85, 34, 0.14);
   box-shadow: inset 3px 0 0 var(--k-orange);
 }
 
 .rowSelected td {
-  color: #fff;
+  color: var(--text-p);
 }
 
 .tableNote {
@@ -337,7 +337,7 @@
 /* SkillsFuture Credit callout */
 .creditCallout {
   margin-top: 28px;
-  background: rgba(255, 107, 43, 0.08);
+  background: rgba(241, 85, 34, 0.08);
   border: 1px solid var(--k-border2);
   border-left: 2px solid var(--k-orange);
   border-radius: var(--rl);
