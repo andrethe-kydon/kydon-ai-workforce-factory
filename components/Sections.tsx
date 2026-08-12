@@ -33,7 +33,7 @@ export function TrustBar() {
 const shifts = [
   { icon: "⚡", title: "Compressed Team Economics", body: "Every hour you spend on administrative work is an hour taken from your core expertise. AI handles the forms and the formatting. You focus on the thinking and the relationships." },
   { icon: "🏗️", title: "The Rise of AI Operators", body: "Fluency in AI is the new professional baseline. Those who can synthesize, narrate, and direct AI systems will command the premium that purely technical or purely human roles no longer can." },
-  { icon: "🇸🇬", title: "Singapore NAS 2.0 Mandate", body: "The National AI Strategy 2.0 calls for 15,000 new AI practitioners, yet no structured income pathway exists." },
+  { icon: "🇸🇬", title: "Singapore NAS 2.0 Mandate", body: "The National AI Strategy 2.0 aims to more than triple Singapore's pool of AI practitioners to 15,000, yet no structured income pathway exists for mid-career professionals to get there." },
   { icon: "📈", title: "The OPC as the New Unit", body: "One Person Companies, AI-augmented, are the most resilient economic production unit of our era." },
 ];
 
@@ -56,12 +56,20 @@ export function Problem() {
         <div className={styles.probGrid}>
           <div>
             <div className={styles.probStat}>
-              <div className={styles.probNum}>73%</div>
-              <p className={styles.probDesc}>of Singapore workers fear AI will significantly affect their roles within a decade.</p>
+              <div className={styles.probNum}>4.7%</div>
+              <p className={styles.probDesc}>of all job postings in Singapore now require AI skills, the highest share of any country in the world.</p>
+              <p className={styles.statSource}>
+                Stanford AI Index Report 2026{" "}
+                <a href="https://lightcast.io/resources/research/stanford-ai-index-2026" target="_blank" rel="noopener noreferrer">Source</a>
+              </p>
             </div>
             <div className={styles.probStat}>
-              <div className={styles.probNum}>1 in 3</div>
-              <p className={styles.probDesc}>mid-career professionals lack a credible pathway into AI-native, income-generating work.</p>
+              <div className={styles.probNum}>15,000</div>
+              <p className={styles.probDesc}>AI practitioners Singapore aims to build, more than triple the current pool, under National AI Strategy 2.0.</p>
+              <p className={styles.statSource}>
+                Ministry of Digital Development and Information{" "}
+                <a href="https://www.mddi.gov.sg/newsroom/041223/" target="_blank" rel="noopener noreferrer">Source</a>
+              </p>
             </div>
             <p className={styles.probBody}>
               AI is not coming for your career. It is coming for the parts of your
@@ -298,10 +306,16 @@ export function ForEnterprises() {
    TRUST SECTION
 ───────────────────────────────────────── */
 const grantChips = [
-  "Kydon Group, Programme Operator",
-  "100K+ Learners on Kydon Platform",
-  "Singapore's #1 AI Job Density Globally",
-  "Agentic AI Skills, Fastest Growing Cluster",
+  { label: "Kydon Group, Programme Operator" },
+  { label: "100K+ Learners on Kydon Platform" },
+  {
+    label: "#1 Globally in AI Job Postings",
+    source: {
+      text: "Stanford AI Index Report 2026",
+      url: "https://lightcast.io/resources/research/stanford-ai-index-2026",
+    },
+  },
+  { label: "Agentic AI Skills, Fastest Growing Cluster" },
 ];
 
 export function TrustSection() {
@@ -317,7 +331,15 @@ export function TrustSection() {
         </h2>
         <div className={styles.grantChips}>
           {grantChips.map((c) => (
-            <div key={c} className={styles.grantChip}>{c}</div>
+            <div key={c.label} className={styles.grantChipCol}>
+              <div className={styles.grantChip}>{c.label}</div>
+              {c.source && (
+                <p className={styles.statSource}>
+                  {c.source.text}{" "}
+                  <a href={c.source.url} target="_blank" rel="noopener noreferrer">Source</a>
+                </p>
+              )}
+            </div>
           ))}
         </div>
         <div className={styles.trustQuote}>
